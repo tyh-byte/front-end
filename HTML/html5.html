@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <footer>
+        <p>Posted by: Hege Refsnes</p>
+        <p>Contact information: <a href="mailto:someone@example.com">
+                someone@example.com</a>.</p>
+    </footer>
+
+    <p>My family and I visited The Epcot center this summer.</p>
+
+    <aside>
+        <h4>Epcot Center</h4>
+        <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+    </aside>
+    <hr>
+
+    <p>使用下面的图片:</p>
+    <img id="scream" src="/pictures/web.jpg" alt="The Scream" width="220" height="277">
+
+    <p>Canvas 填充如下:</p>
+    <canvas id="myCanvas" width="250" height="300" style="border:1px solid #d3d3d3;">
+        你的浏览器不支持HTML5 canvas标记.
+    </canvas>
+
+    <p><button onclick="myCanvas()">试试</button></p>
+
+    <script>
+        function myCanvas() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("scream");
+            ctx.drawImage(img, 10, 10);
+        }
+    </script>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+    </svg>
+
+</body>
+
+</html>

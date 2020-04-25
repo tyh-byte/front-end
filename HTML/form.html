@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        .
+        form 元素
+        .
+    </form>
+
+    <form>
+        名字:<br>
+        <input type="text" name="firstname">
+        <br>
+        姓氏:<br>
+        <input type="text" name="lastname">
+    </form>
+
+    <form>
+        <input type="radio" name="gender" value="male" checked> 男<br>
+        <input type="radio" name="gender" value="female"> 女<br>
+        <input type="radio" name="gender" value="other"> 其他
+    </form>
+
+    <form action="action_page.php">
+        名字:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        姓氏:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="action_page.php">
+        <fieldset>
+            <legend>个人信息:</legend>
+            名字:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            姓氏:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <form action="action_page.php">
+        <select name="cars">
+            <option value="volvo">沃尔沃</option>
+            <option value="bmw">宝马</option>
+            <option selected value="benz">奔驰</option>
+            <option value="audi">奥迪</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <form action="action_page.php">
+        <textarea name="message" rows="10" cols="30">这只猫正在花园里玩.</textarea>
+        <br>
+        <input type="submit">
+    </form>
+
+    <button type="button" onclick="alert('Hello World!')">点击我!</button>
+
+    <form action="action_page.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <form action="action_page.php">
+        用户名: <input type="text" name="user">
+        <br><br>
+        加密: <keygen name="security">
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <form action="action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+
+</body>
+
+</html>

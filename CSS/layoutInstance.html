@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>编程字典</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* p:first-child i {
+            color: blue;
+        } */
+        /* h1:after {
+            content: url("/pictures/web.jpg");
+        } */
+
+        p>i:first-child {
+            color: blue;
+        }
+
+        .header,
+        .footer {
+            background-color: grey;
+            color: white;
+            padding: 15px;
+        }
+
+        .column {
+            float: left;
+            padding: 15px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .menu {
+            width: 25%;
+        }
+
+        .content {
+            width: 75%;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #33b5e5;
+            color: #ffffff;
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>标题帅的</h1>
+    <P>这是<i>一些</i>测试<i>文本</i></P>
+    <P>这是<i>一些</i>测试<i>文本</i></P>
+    <div class="header">
+        <h1>干尼亚</h1>
+    </div>
+
+    <div class="clearfix">
+
+        <div class="column menu">
+            <ul>
+                <li>航班</li>
+                <li>城市</li>
+                <li>岛屿</li>
+                <li>食物</li>
+            </ul>
+        </div>
+
+        <div class="column content">
+            <h1>城市</h1>
+            <p>干尼亚是哈尼阿地区的首府在克里特岛的岛上。这个城市可以分为两部分，老城和现代城市.</p>
+            <p>在以后的章节中，您将了解更多关于web布局和响应网页的内容.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>页脚文本</p>
+    </div>
+
+</body>
+
+</html>

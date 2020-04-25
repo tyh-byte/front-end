@@ -1,0 +1,3192 @@
+<!--HTML--Hyper Text Markup Language  超文本标记语言
+    CSS--Cascading Style Sheets  层叠样式表
+
+-->
+
+
+<!--html基础
+html文档
+  所有的HTML文档必须以 <!DOCTYPE html> 开始。
+
+  所有HTML文档本身以 <html> 开始以 </html> 结尾。
+
+  HTML文档的看见部分以 <body> 开始以 </body> 结尾
+
+标题
+  HTML 标题使用标签 <h1> 到 <h6> 定义
+
+  <h1>定义最重要的标题，<h6>定义最不重要的标题
+
+段落
+  HTML段落使用 <p> 标签定义：
+
+链接
+  HTML链接使用 <a> 标签定义
+
+图片
+  HTML图片使用 <img> 标签定义
+
+  他们有 src（图片源路径）alt（附加信息）width（宽度）和 height（高度）等信息
+-->
+
+
+<!--元素
+  一个HTML元素通常包含一个开始标签一个结束，中间插入内容：
+  HTML 元素没有内容称为空元素。空元素没有结束标签，例如 <br/>元素（表示一个换行）
+  
+  元素嵌套
+
+  html不区分大小写，XHTML中小写是严格文档类型
+
+-->
+
+
+<!--属性
+  所有的HTML元素都能有属性
+  属性提供了关于HTML元素的额外信息
+  属性总是在开始标签里面设置
+  属性通常以键值对的形式出现：例如：name="value"
+
+lang属性
+  文档的语言声明在<html>标签里
+  语言用lang属性声明
+  声明语言对辅助应用（屏幕阅读器）和搜索引擎都很重要
+  前面两个字母指定语言，如果有方言，横线后面的两个字母可以指定方言
+
+title属性
+  在段落元素<p>里面添加一个title属性，当鼠标经过段落时标题属性将作为一个提示显示出来。
+  
+href属性
+  HTML使用<a>来定义链接，链接地址通过href设置
+
+size属性
+  HTML使用<img>来定义图片
+
+  使用src属性定义文件名称，使用width和height定义图片的尺寸
+
+alt属性
+  当图片不能显示时，alt属性指定备选文本。
+
+  这些值能被屏幕阅读器读取，例如一些盲人可以听到
+
+我们建议使用小写属性
+HTML5标准没有要求必须小写属性名称
+
+标题属性可以大写或者小写，例如：Title或者TITLE
+
+W3C推荐使用小写属性，并且一些严格的文档类型是要求小写的，例如XHTML
+
+在我们的教程里面都是使用小写属性
+
+我们建议括住属性值，用" "
+HTML5标准不要求必须括住属性值
+
+推荐括住属性值，并且一些严格的文档类型是要求必须括住属性值，例如XHTML
+有时候必须扩住属性值，例如：如果一个标题属性里面有空格，属性值不括住会出现错误
+通常都使用括号，忽略括号有时会产生错误
+在我们的教程里面属性值都使用括号
+
+在HTML中一般使用双引号包围属性值，但是也可以使用单引号
+
+有些情况下当属性值本身里面有双引号，可以外部使用单引号
+-->
+
+
+<!--html标题
+  标题使用<h1>到<h6>标签来定义
+  <h1> 定义非常重要的标题。<h6> 定义不太重要的标题
+  浏览器自动添加前后边距
+
+水平线
+<hr>标签用来划分不同的专题，通常显示为一条水平线
+<hr>元素通常来在HTML页面中分隔内容
+
+<head> 元素
+<head>元素和HTML标题无关
+<head>元素是metadata的一个容器。metadata是关于HTML文档的数据。Metadata不显示。
+<head>元素放在<html>和<body>标签之间， 元数据通常定义文档标题、字符集、样式、链接、脚本和其他元信息.
+
+html标签参考
+  html  body  head  h1-h6  hr p 
+-->
+
+
+<!--html段落
+HTML <p> 元素定义一个段落，浏览器在段落前后自动添加一些空白（边距）
+
+HTML 显示
+  你不能确定HTML是如何显示。
+
+  或大或小的屏幕，并调整窗口将产生不同的结果。
+
+  在HTML中，你不能在你的HTML代码中添加额外的空格和空行来改变输出。
+
+  当页面显示时，浏览器将移除任何额外的空间和额外的线条
+
+不要忘记结束标签
+
+HTML <pre>元素
+  HTML <pre> 元素定义预处理格式化文本.
+  元素中的文本以固定宽度字体显示，并且保留空格和换行符，例如：
+
+<p> <br> <pre>
+-->
+
+
+<!--html样式
+html样式属性
+  设置HTML元素的样式，可以使用样式属性。
+  html样式属性的语法如下：
+  <tagname style="property:value;">
+  property 是一个CSS 属性. value 是一个CSS 值.
+
+HTML背景颜色
+  background-color 属性定义一个HTML元素的背景颜色.
+  本例为页面设置背景颜色为粉蓝色，例如：
+
+HTML文本颜色
+  color属性定义一个HTML元素的文本颜色，
+
+HTML 字体
+  font-family 属性定义可用于HTML元素的字体:
+
+HTML文本大小
+  font-size 属性定义一个HTML元素的文本大小，
+
+HTML文本对齐
+  text-align 属性定义一个HTML元素的水平对齐，
+
+小结：
+  使用style 属性 为 HTML 元素指定样式
+  使用 background-color 设置背景颜色
+  使用 color 设置文本颜色
+  Use font-family 设置文本的字体
+  Use font-size 设置文本大小
+  使用 text-align 设置文字对齐
+-->
+
+<!--html格式化
+html格式化元素：
+  HTML定义了具有特殊意义的元素定义的文本。
+  HTML使用像<b> 和 <i>元素来格式化输出，如粗体或斜体文本。
+  格式化元素被设计用来显示特殊类型的文本：
+  <b> - 粗体文本
+  <strong> - 重要的文本
+  <i> - 斜体文本
+  <em> - 强调文本
+  <mark> - 标记文本
+  <small> - 小文本
+  <del> - 删除的文字
+  <ins> - 插入文本
+  <sub> - 下标文字
+  <sup> - 上标文本  
+
+HTML <b> 和 <strong> 元素
+  HTML <b> 元素定义粗体文本，没有任何额外的重要性，
+  HTML <strong> 元素定义粗文本，增加语义的强调，
+  
+HTML <i> and <em> 元素
+  HTML <i> 元素定义斜体文本，没有任何额外的重要性，
+  HTML <em> 元素定义强调文本，增加语义重要性
+浏览器显示<strong>和<b>相同，<em>和<i>相同，然而这些标签的含义是有区别的：<b>和<i>粗体和斜体文本，但是<strong>和<em》意味着文本是重要的
+
+HTML <small> 元素
+  HTML <small> 元素定义了小文字
+
+HTML <mark> 元素
+  HTML <mark> 元素定义标记或突出文本
+
+HTML <del> 元素
+  HTML <del> 元素定义了删除（移除）文字，例如：
+
+HTML <ins> 元素
+  HTML <ins> 元素定义了插入文本（添加），例如：
+    
+HTML <sub> 元素
+  HTML <sub> 元素定义下标文本，例如：
+
+HTML <sub> 元素
+  HTML <sub> 元素定义下标文本，例如：
+  
+HTML <sup> 元素
+  HTML <sup> 元素定义上标文本，例如：
+  
+<b> <em> <i> <small> <strong> <sub> <sup> <ins> <del> <mark>
+-->
+
+
+<!--html引用元素
+HTML <q> 是 Quotations 的简写
+  HTML <q> 元素呢定义一个简短的引用。
+  浏览器通常会插入引号，在 <q> 元素周围，例如：
+
+HTML <blockquote> 块引用
+  HTML <blockquote> 元素定义从另一个源引用的一部分。
+  浏览器通常缩进 <blockquote> 元素，例如：
+
+HTML <abbr> 缩写
+  HTML <abbr> 元素定义缩写或缩写.
+  标记缩写可以给浏览器提供有用的信息, 例如，翻译系统和搜索引擎，
+
+HTML <address> 联系人信息
+  HTML <address> 元素定义文档或文章的联系人信息（作者/所有者）.
+  <address>元素通常以斜体。大多数浏览器将在元素前后添加换行符，例如
+
+HTML <cite> 作品标题
+  HTML <cite> 元素定义了一个作品的标题。
+  浏览器通常会用斜体显示 <cite>元素，例如：
+
+HTML <bdo> 双向重写
+  HTML <bdo> 元素定义了双向覆盖
+  <bdo> 元素用于重写当前文本方向，例如：
+
+总结：<abbr> <address> <bdo> <blockquote> <cite> <q>
+-->
+
+
+<!--html计算机代码元素
+HTML 计算机代码格式
+HTML 通常使用可变字母大小和间距。
+在显示计算机代码时，这不是我们想要的.
+<kbd>, <samp> 和 <code> 元素都显示在固定字母大小和间距。
+
+HTML <kbd> 键盘输入
+  HTML <kbd> 元素定义键盘输入，
+
+HTML <samp> 计算机输出
+  HTML <samp> 元素定义计算机程序中的示例输出
+
+HTML <code> 计算机编码
+  HTML <code> 元素定义了一段编程代码
+  注意 <code> 元素不保留多余的空格和换行。
+  要解决这个问题，你可以把 <code> 元素放到 <pre> 元素里面
+
+HTML <var> 变量
+  HTML <var> 元素定义了变量。
+  变量可以是编程上下文中的数学表达式或程序中的变量，
+
+总结：<code> <kdb> <samp> <var> <pre>
+-->
+
+<!--html注释
+HTML 注释标签
+  你可以使用下面的语法来为你的HTML源代码中添加注释：
+   "!-- 这里写你的注释 --" 注意有一个感叹号（！）在打开标签，但不是在关闭标签。
+
+条件注释
+  你可以在一些场合需要使用条件注释，
+    《!--[if IE 9]》
+    .... some HTML here ....
+    《![endif]--》
+    条件注释定义一些HTML标签是仅由Internet Explorer执行。
+-->
+
+
+<!--html颜色
+color名称：在HTML中，颜色可以用颜色名称指定，
+  red(255,0,0)\orange(255,255,0)\yellow(0,255,0)\cyan(0,255,255)\blue(0,0,255)
+
+RGB 值
+  在HTML中，颜色也可以被指定为一个RGB值，用此公式: rgb(red, green, blue)
+  每个参数 (red, green, and blue) 定义颜色在0和255之间的强度.
+  例如，RGB（255,0,0）显示为红色，因为红色是它的最高值（255）和其他的设置0。
+  显示颜色为黑色，所有颜色参数必须设置为0，这样：RGB（0,0,0）。
+  显示白色，所有颜色参数必须设置为255，这样：RGB（255,255,255）
+  通常使用3个光源的相等值来定义灰度阴影：
+
+HEX 值
+  在HTML中, 颜色也可以在窗体中使用十六进制值指定: #RRGGBB, 这里 RR (red), GG (green) 和 BB (blue) 是 00 到 FF 之间的一个取值 (像数字 0-255).
+  例如, #FF0000 显示为红色, 因为红色被设置为它的最高值 (FF) 其他设置为最低值 (00).
+-->
+
+<!--html和样式表
+html和样式表：
+  CSS 是 Cascading Style Sheets的缩写，即级联样式表的意思。
+  CSS描述HTML元素将显示在屏幕上，纸上，或在其他媒体。
+  CSS可以节省大量的工作。它可以同时控制多个网页的布局。
+  CSS可以通过3种方式添加到HTML：
+    Inline（内联） - 在HTML元素中使用样式属性
+    Internal（内部） - 在 <head> 部分使用<style>元素
+    External（外部） - 使用外部CSS文件
+  添加CSS的最常见的方式, 是保存样式在单独的CSS文件中.
+  然而，在这里，我们将使用内联和内部样式，因为这是更容易阅读, 和更容易为你自己测试.
+
+Inline（内联）
+  Inline（内联）CSS 应用一种样式到一个HTML元素上.
+  内联CSS使用HTML元素的样式属性。
+  这个实例设置元素的文本颜色为蓝色，<h1 style="color:blue;">这是蓝色标题</h1>
+
+Internal（内部） CSS
+  Internal（内部） CSS 用于定义一个HTML页面风格.
+  Internal（内部）CSS 在 <head> 部分使用<style>元素来定义，
+
+External（外部） CSS
+  外部样式表是用来定义许多HTML页面风格。
+  使用外部样式表，您可以通过更改一个文件来更改整个网站的外观！
+  使用外部样式表，在HTML页面的<head>部分给它添加一个链接，
+  外部样式表可以使用任何文本编辑器编写。文件不能包含任何HTML代码， 必须保存为一个.css为扩展名的文件。
+
+CSS 字体
+  CSS color 属性定义要使用的文本颜色.
+  CSS font-family 属性定义要使用的字体.
+  CSS font-size 属性定义要使用的文本大小，
+
+CSS 边框
+  CSS 边框属性定义一个HTML元素的边框，
+  p {
+    border: 1px solid powderblue;
+    }
+
+CSS 内边距(Padding)
+  The CSS 内边距属性定义文本和边框之间的填充（空格）
+  p {
+    border: 1px solid powderblue;
+    padding: 30px;
+    }
+
+CSS Margin（外边距）
+  CSS margin（外边距） 性定义边界外的边距（空间）
+    p {
+    border: 1px solid powderblue;
+    margin: 50px;
+      }
+
+id 属性
+  若要为特定元素定义特定样式，请向该元素添加id属性,然后为具有特定id的元素定义样式，
+  <p id="p01">我就是我...</p>
+  #p01 {
+    color: blue;
+        }
+  注意: 一个元素的ID在一个页面中应该是唯一的，所以id选择器用来选择一个唯一的元素!
+
+class 属性
+  要为特殊类型的元素定义样式，请向元素添加类属性
+  <p class="error">我就是我...</p>
+  然后为特定类定义元素的样式
+  p.error {
+    color: red;
+    }
+
+外部样式引用
+  外部样式表可以引用完整的URL或与当前网页相对应的路径.
+  此示例使用完整的URL链接到样式表，例如：
+  <link rel="stylesheet" href="http://www.CodingDict.com/html/styles.css">
+  这个例子的链接样式表位于HTML文件夹在当前网站：
+  <link rel="stylesheet" href="/html/styles.css">
+  此示例链接到位于当前页相同文件夹中的样式表：
+  <link rel="stylesheet" href="styles.css">
+
+本章小结
+  使用HTML行内样式属性
+  使用 HTML <style> 元素定义内部样式表
+  使用 HTML <link> 元素引用一个外部CSS文件
+  使用 HTML <head> 元素去存储<style> 和 <link> 元素
+  使用CSS color 属性设置文本颜色
+  使用CSS font-family 属性设置文本字体
+  使用CSS font-size 属性设置文本大小
+  使用CSS border 属性设置边框
+  使用CSS padding 属性设置内边距
+  使用CSS margin 属性设置外边距
+-->
+
+
+<!--html超链接
+HTML链接-超链接
+  HTML链接是超链接。
+  您可以点击一个链接，跳转到另一个文件。
+  当鼠标移动到一个链接上时，鼠标箭头将变成一只小手。
+  注意: 一个链接不必是文本。它可以是一个图像或任何其他HTML元素
+
+HTML 链接 - 语法
+  在HTML中，链接使用<a>标签定义：<a href="url">链接文字</a>
+  href属性中指定的目标地址（ http://www.CodingDict.com/html/ ）的链接。
+  链接文本是可见的部分（访问我们的HTML教程）。
+  点击链接文本将发送到指定的地址。
+  注意: 无子文件夹地址斜杠，你可能会产生两个请求到服务器。许多服务器会自动向地址添加一个前斜杠，然后创建一个新的请求.。
+
+本地链接
+  上面的例子使用了绝对URL（一个完整的网址）。
+  本地链接（链接到同一网站）是一个相对URL指定的（非http: //www.…）。
+  <p><a href="html_images.html">HTML Images</a>
+   网站里面的一个链接页面.</p>
+  <p><a href="http://www.CodingDict.com/">编程字典</a>
+  链接到另一个网站.</p>
+
+HTML 链接颜色
+  默认情况下，将出现这样的链接（在所有浏览器）：
+  一个未访问的链接下划线和蓝色
+  一个被访问的链接下划线和紫色
+  活动链接是下划线和红色的
+  可以通过使用样式更改默认颜色，
+  <style>
+  a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  a:hover {#此为鼠标移动到链接文字上链接文字显示的颜色
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+  a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+  }
+  </style>
+
+HTML 链接 - target 属性
+  target 目标属性指定打开链接文档的位置。
+  target 目标属性可以具有下列值之一:
+    _blank - 在新窗口或选项卡中打开链接文档.
+    _self - 打开链接文件在同一窗口/标签，因为它被点击（这是默认的）
+    _parent - 在父框架中打开链接文档.
+    _top - 在当前窗口中打开链接文档.
+    framename - 在指定的框架中打开链接文档
+  下面示例将在新的浏览器窗口/选项卡中打开链接文档：
+  <a href="http://www.CodingDict.com/" target="_blank">编程字典</a>
+  <p>设置target为 "_blank",
+  链接将在浏览器的新窗口或者标签中打开.</p>
+  提示：如果你的网页被锁定在一个框架，你可以使用target="top"：
+  <p>锁定在当前frame? <a href="http://www.CodingDict.com" target="_top">点击我</a></p>
+
+HTML 链接 - 图片链接
+  它是常见的使用图像作为链接：
+  <a href="http://www.CodingDict.com">
+  <img src="new_logo.png" alt="编程字典" style="width:250px;height:112px;border:0">
+  </a>
+  <p>如果不添加border，有些浏览器默认会添加一个边框.</p>
+  注意: 添加border:0;样式防止IE9（或者早期版本）显示图像边框（当图像是一个链接）。
+
+HTML 链接 - 创建一个书签
+  HTML书签是用来让读者跳到网页的特定部分。
+  书签可以是有用的，如果你的网页很长。
+  要创建书签，必须先创建书签，然后向其添加链接。
+  当链接被点击时，页面将滚动到书签的位置。
+实例
+  首先，创建带有id属性的书签：
+  <h2 id="tips">使用tips小节</h2>
+  然后，添加一个链接到书签（“有用的提示部分”），从同一页内：
+  <a href="#tips">访问有用的tips小节</a>
+  或者，添加一个链接到书签（“有用的提示部分”），从另一页：
+
+外部路径
+  外部页可以用完整URL引用，或与当前网页相对应的路径引用。
+  这个例子使用一个完整的URL链接到一个网页：
+
+本章小结
+  使用 <a> 元素定义一个链接
+  使用 href 属性来定义链接地址
+  使用 target 属性来定义打开链接文档的位置.
+  使用 <img> 元素 ( <a> 元素内部)作为一个链接
+  使用 id (id="value") 在页面中定义书签
+  使用 href 属性 (href="#value") 链接到书签
+
+-->
+
+<!--html图片
+HTML图像语法
+  HTML中，图片使用<img>标签定义。
+  <img> 标签是空的，它只包含属性，并且没有关闭标签。
+  通过src属性指定图像的URL（网址）：
+  <img src="url" alt="some_text" style="width:width;height:height;">
+
+alt 属性
+  alt属性提供了一种图像的替换文字，如果用户因为某些原因不能查看它（因为连接速度慢，src属性指定的错误，或者如果用户使用屏幕阅读器）。
+  如果浏览器不能找到一个图像，它会显示alt属性的值： 
+  alt属性是必需的。没有它的网页将无法正确验证。
+
+HTML 屏幕阅读器
+  屏幕阅读器是一个软件程序，读取HTML代码，转换为文本，并允许用户“听” 这些内容。屏幕阅读器对盲人、视力受损或学习障碍的人有帮助。
+
+图片尺寸-宽度和高度
+  可以使用样式属性指定图像的宽度和高度。
+  值被指定为像素（使用后的值的px）：
+  或者，可以使用宽度和高度属性。这里，默认值是按像素指定的：
+  <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+  注意：总是指定图像的宽度和高度。如果未指定宽度和高度，则当图像加载时，该页将闪烁。
+
+使用宽度和高度，还是style样式？
+  宽度、高度和样式属性在HTML5是有效的。
+  但是，我们建议使用样式属性。它可以防止内部或外部样式表改变图像的原始大小：
+
+图像在另一个文件夹中里面
+  如果未指定，浏览器将在同一文件夹中找到与网页相同的图像。
+  然而，在子文件夹中存储图像是常见的。你必须包括在src文件夹名称：
+  <img src="/pictures/web.jpg"
+  alt="HTML5 Icon" style="width:128px;height:128px;">
+
+图片在另一台服务器上
+  一些网站将图像存储在图像服务器上。
+  实际上，您可以访问世界上任何网站地址的图像：
+  <img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"
+  alt="baidu.com" style="width:270px;height:129px;">
+
+动画图片
+  允许使用GIF动画图片：
+  <img src="programming.gif" alt="程序员" style="width:48px;height:48px;">
+  注意插入动画图像的语法与非动画图像没有什么不同。
+
+图像浮动
+  使用CSS浮动属性让图象浮动到文本的右侧或左侧：float
+
+图像地图
+  使用 <map> 标签来定义一个图片地图. 图片地图是可点击的区域图像.
+  <map>标签的name属性与<img>的usemap属性相关，产生图像和地图之间的关系。
+  标签包含一些 标签, 定义的可点击区域在图像地图上:
+  <map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+  </map>
+
+本章小结
+  使用 HTML <img> 元素定义图像的元素。
+  使用 HTML src 属性来定义图像的URL。
+  使用 HTML alt 属性来定义图像的替换文本，如果无法显示。
+  使用 HTML width 和 height 属性来定义图像的大小。
+  使用 CSS width 和 height 属性来定义图像的大小（可选）。
+  使用 CSS float 属性让图像浮动。
+  使用 HTML <map> 元素定义一个图像映射的元素。
+  使用 HTML <area> 元素在图像映射定义的可点击区域。
+  使用 HTML <img>元素的usemap属性指向一个图像映射。
+  注意：加载图像需要时间。大的图像可能降低页面的下载。小心使用图像。
+-->
+
+
+<!--html表格
+定义一个html表格
+  使用<table>标签定义HTML表格。
+  <tr>标签定义表中的每一行使用。使用<th>标签定义表头。 默认情况下，表标题是粗体和居中的。一个表的数据/单元使用<td> 标签定义。
+  注意: <td>元素是表的数据容器。
+  它们可以包含所有的HTML元素; 文本、图像、列表、其他表格等
+
+HTML表格 - 添加边框
+  如果不指定表的边框，则将不显示边框。
+  使用CSS设置表格的边框如下：
+  记住为表和表单元格定义边框。
+
+HTML 表格 - 折叠边框
+  如果你想要的边框折叠成一个边框，添加CSS border-collaps边框属性：
+  <style>
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  </style>
+
+HTML 表格 - 添加单元格填充（padding）
+  单元格填充（padding）指定单元格内容及其边框之间的空间。
+  如果不指定填充（padding），则将显示表单元格而不填充（padding）。
+  设置填充，使用css padding属性：
+  <style>
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  th, td {
+      padding: 15px;
+  }
+  </style>
+
+HTML表格 - 左对齐标题
+  默认情况下，表标题是粗体和居中的。
+  左对齐的表格标题，使用CSS text-align属性：
+  th {
+      text-align: left;
+  }
+
+HTML表格 - 添加边框间距
+  边框间距指定单元格之间的空间。
+  设置一个表空间的边界，使用CSS border-spacing属性：
+  table {
+    border-spacing: 15px;
+  }
+  注意：如果表已经是collapsed折叠边框，边框间距没有影响。
+
+HTML表格 单元格跨多列
+  使表格单元格跨越多个列，使用colspan属性：
+  <table style="width:100%">
+  <tr>
+    <th>姓名</th>
+    <th colspan="2">电话</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+  </table>
+
+HTML表中 - 单元格跨多行
+  使表格单元格跨多个行，使用rowspan属性：
+  <table style="width:100%">
+  <tr>
+    <th>姓名:</th>
+    <td>比尔</td>
+  </tr>
+  <tr>
+    <th rowspan="2">电话:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+  </table>
+HTML表格 - 添加标题
+  若要向表添加标题，请使用<caption>标签：
+  <table style="width:100%">
+  <caption>每月储蓄</caption>
+  <tr>
+    <th>月</th>
+    <th>储蓄</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+  </table>
+  注意：<caption> 标签必须立即插入在<table>标签之后。
+
+为表格指定一个特殊样式
+  为表格指定一个特殊样式, 添加一个 id 属性:
+  <table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  </table>
+现在您可以为这个表定义一个特殊的样式：
+  table#t01 {
+      width: 100%;
+      background-color: #f1f1c1;
+  }
+
+本章小结
+  使用 HTML <table> 元素定义表格。
+  使用 HTML <tr> 元素定义一个表行。
+  使用 HTML <td> 元素定义表数据。
+  使用 HTML <th> 元素定义一个表标题。
+  使用 HTML <caption> 元素定义表格标题。
+  使用 CSS border 属性定义一个边框。
+  使用 CSS border-collapse 定义折叠单元格边框的属性。
+  使用 CSS padding 属性添加到单元格中的填充。
+  使用 CSS text-align 属性对齐单元格文本。
+  使用 CSS border-spacing 属性设置单元格之间的间距。
+  使用 colspan 属性使单元格跨越多个列。
+  使用 rowspan 属性使单元格跨越多行。
+  使用 id 属性来唯一表示一个表格。
+  <table> <th> <tr> <td> <caption> <col> <thead> <tbody> <tfoot>
+-->
+
+
+<!--html列表
+无序列表
+  一个无序列表使用<ul>开始。每一个列表项以<li>标签开始。
+  默认情况下，列表项目将被标记为子弹（黑色小圆圈）：
+  <ul>
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+  </ul>
+
+无序列表-选择列表项标记
+  CSS list-style-type 属性用于定义列表项标记的样式:
+    disc	  将列表项标记设置为一个子弹（默认）
+    circle	将列表项标记设置为一个圆
+    square	将列表项标记设置为一个正方形
+    none	  列表项将不被标记
+
+有序列表
+  有序列表用<ol>标签开始。 每个列表项使用<li>标签开始。
+  默认情况下，列表项将标有数字：
+  <ol>
+    <li>咖啡</li>
+    <li>茶</li>
+    <li>牛奶</li>
+  </ol>
+
+有序列表 - type属性
+  <ol> 标签的type属性,定义列表项标记的类型：
+  类型	        描述
+  type="1"	列表项将用数字编号（默认值）
+  type="A"	列表项将编号用大写字母
+  type="a"	列表项将用小写字母编号.
+  type="I"	列表项将编号用大写罗马数字
+  type="i"	列表项将用小写罗马数字编号.
+
+HTML描述列表
+  HTML还支持描述列表。
+  一个描述列表是一个列表的术语，每个术语都有一个描述。
+  <dl>标签定义了描述列表，<dt> 标签定义了术语（名称）, <dd> 签描述的每一个术语：
+  <dl>
+    <dt>咖啡</dt>
+    <dd>- 一种黑热饮料</dd>
+    <dt>牛奶</dt>
+    <dd>- 一种白冷饮料</dd>
+  </dl> 
+
+嵌套的HTML列表
+  列表可以嵌套（列表内嵌套列表）:ul>ul>ul 可以快速嵌套
+  注意: 列表可以包含新的列表，和其他的HTML元素，如图片、链接等。
+  <ul>
+  <li>咖啡</li>
+  <li>茶
+    <ul>
+    <li>红茶</li>
+    <li>绿茶</li>
+    </ul>
+  </li>
+  <li>牛奶</li>
+  </ul>
+
+水平列表
+  HTML列表可以通过使用CSS样式，以不同的样式展示。
+  一种流行的方法是使用水平列表，创建菜单：
+  <head>
+  <meta charset="UTF-8">
+  <title>编程字典</title>
+  <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111111;
+    }
+  </style>
+  </head>
+  <body>
+
+  <ul>
+    <li><a href="#home">首页</a></li>
+    <li><a href="#news">新闻</a></li>
+    <li><a href="#contact">联系我们</a></li>
+    <li><a href="#about">关于我们</a></li>
+  </ul>
+
+  </body>
+
+本章小结
+  使用 HTML <ul> 元素定义一个无序列表
+  使用 CSS list-style-type 属性定义列表项标记
+  使用 HTML <ol> 定义一个有序列表的元素
+  使用 HTML type 属性定义编号类型
+  使用 HTML <li> 元素定义一个列表项
+  使用 HTML <dl> 元素定义一个描述列表
+  使用 HTML <dt> 元素定义描述项
+  使用 HTML <dd> 元素描述描述列表中的术语
+  列表可以嵌套在列表中
+  列表项可以包含其他HTML元素
+  使用CSS float:left 或者 display:inline 属性可以显示一个水平列表
+HTML列表标签
+  标签	描述
+  <ul>	定义一个无序列表
+  <ol>	定义一个有序列表
+  <li>	定义一个列表项
+  <dl>	定义描述列表
+  <dt>	在描述列表中定义一个术语
+  <dd>	描述描述列表中的术语
+-->
+
+<!--html块级元素
+Block 块级元素
+  一个块级元素总是从一个新的行开始，并占据可用的宽度（尽可能延伸到左边和右边）。
+  常用的块级元素：
+    <div>
+    <h1> - <h6>
+    <p>
+    <form>
+
+Inline 内联元素
+  内联元素不在新行上启动，只占用必要的宽度。这是 一个段落内的内联 <span> 元素。
+  下面是常用的内联Inline元素：
+    <span>
+    <a>
+    <img>
+
+The <div> Element
+  <div> 常被用作其它HTML元素的容器。
+  <div> 元素没有必需的属性，但样式和类都是常见的。
+  当和CSS一起使用时, <div> 元素可用于样式内容块：
+    <div style="background-color:black;color:white;padding:20px;">
+    <h2>北京</h2>
+      <p>
+        北京，简称“京”，中华人民共和国首都、直辖市、国家中心城市、超大城市，全国政治中心、文化中心、国际交往中心、科技创新中心，
+        是中国共产党中央委员会、中华人民共和国中央人民政府和全国人民代表大会的办公所在地，中国中部战区司令部驻地。
+      </p>
+      <p>
+        2015年末，北京全市常住人口2170.5万人，比2014年末增加18.9万人。其中，常住外来人口822.6万人，占常住人口的比重为37.9%。
+        2015年北京市实现地区生产总值22968.6亿元，比2014年增长6.9%。
+      </p>
+    </div>
+
+<span> 元素
+  <span> 元素通常用作一些文本的容器。
+  <span> 元素没有必需的属性，但样式和类都是常见的。
+  当和CSS一起使用，该元素可用格式化部分文字的样式：
+  <h1>我的<span style="color:red">重要</span>标题</h1>
+
+HTML分组标签
+  标签	      描述
+  <div> 	 定义文档中的一个部分（块级元素）
+  <span>	 定义文档中的一个片段（内联元素）
+-->
+
+
+<!--html类
+使用class类属性
+  HTML类属性可以为同一类的名字，定义相同风格的元素。
+  这里有三个 <div> 元素指向同一类名：
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>编程字典</title>
+    <style>
+    div.cities {
+        background-color: black;
+        color: white;
+        margin: 20px 0 20px 0;
+        padding: 20px;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="cities">
+      <h2>伦敦</h2>
+      <p>London is the capital of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </div>
+
+    <div class="cities">
+      <h2>巴黎</h2>
+      <p>Paris is the capital and most populous city of France.</p>
+      <p>Situated on the Seine River, it is at the heart of the 蝜e-de-France region, also known as the r間ion parisienne.</p>
+      <p>Within its metropolitan area is one of the largest population centers in Europe, with over 12 million inhabitants.</p>
+    </div>
+
+    <div class="cities">
+      <h2>东京</h2>
+      <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+      <p>It is the seat of the Japanese government and the Imperial Palace, and the home of the Japanese Imperial Family.</p>
+      <p>The Tokyo prefecture is part of the world's most populous metropolitan area with 38 million people and the world's largest urban economy.</p>
+    </div>
+
+    </body>
+    </html>
+
+在行内元素上使用类 class属性
+  HTML class 属性也可用于内联元素：
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>编程字典</title>
+      <style>
+        span.note {
+            font-size: 120%;
+            color: red;
+        }
+      </style>
+      </head>
+    <body>
+
+      <h1>我的 <span class="note">重要</span> 标题</h1>
+      <p>这是一些 <span class="note">重要</span> 文本.</p>
+
+    </body>
+    </html>
+-->
+
+
+<!--html iframe
+Iframe语法
+  使用 <iframe> 标签来定义一个iframe:
+  <iframe src="URL"></iframe>
+  src属性用来指定内联框架网页URL（网址）。
+
+Iframe - 设置高度和宽度
+  使用height 和 width 属性指定iframe的大小。
+  属性值按默认值指定为像素, 但他们也可以在百分比（如“80%”）。
+  <iframe src="demo_iframe.htm" height="200" width="300"></iframe>
+
+Iframe - 去除边框
+  默认情况下，iframe周围显示一个边界。
+  去除边框，可以添加CSS边框样式属性。
+  <iframe src="demo_iframe.htm" style="border:none;"></iframe>
+  使用CSS，你也可以改变iframe的大小和边框的样式和颜色：
+  <iframe src="demo_iframe.htm" style="border:2px solid grey;"></iframe>
+
+Iframe - 目标是一个链接
+  iframe可以作为一个链接的目标框架。
+  target 链接的属性必须是指iframe的name属性：
+  <iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+  <p><a href="http://www.CodingDict.com" target="iframe_a">编程字典</a></p>
+
+HTML iframe 标签
+  标签	    描述
+  <iframe>	定义一个行内框架
+-->
+
+<!--html和javaSctipt脚本
+HTML <script> 标签
+  <script> 标签是用来定义一个客户端脚本（JavaScript）。
+  <script> 元素既可以包含脚本语句，又可以通过src属性指向外部脚本文件。
+  JavaScript常用图像处理、表单验证、及内容的动态变化。
+  选择一个HTML元素, JavaScript 经常使用 document.getElementById(id) 方法.
+  下面的 JavaScript 实例输出 "Hello JavaScript!" 到id="demo"的元素里面:
+
+尝试 JavaScript
+  这里有一些JavaScript能做什么的实例：
+  JavaScript 可以更改HTML内容
+  <h1>我的第一个 JavaScript</h1>
+    <p>JavaScript 可以改变HTML元素的内容:</p>
+    <button type="button" onclick="myFunction()">点击我!</button>
+    <p id="demo">这是一个描述.</p>
+    <script>
+      function myFunction() {
+          document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      }
+    </script>
+JavaScript 可以改变HTML样式
+  <h1>我的第一个 JavaScript</h1>
+    <p id="demo">JavaScript 可以改变HTML元素的样式.</p>
+    <script>
+      function myFunction() {
+          document.getElementById("demo").style.fontSize = "25px";
+          document.getElementById("demo").style.color = "red";
+      }
+    </script>
+  <button type="button" onclick="myFunction()">点击我!</button>
+JavaScript 可以改变 HTML 属性
+  <script>
+      function light(sw) {
+          var pic;
+          if (sw == 0) {
+              pic = "pic_bulboff.gif"
+          } else {
+              pic = "pic_bulbon.gif"
+          }
+          document.getElementById('myImage').src = pic;
+      }
+  </script>
+
+  <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+  <p>
+  <button type="button" onclick="light(1)">Light On</button>
+  <button type="button" onclick="light(0)">Light Off</button>
+  </p>
+
+HTML <noscript> 标签
+  <noscript> 标签用于为用户禁用浏览器中的脚本或不支持客户端脚本的浏览器提供替代内容:
+  <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+
+    <noscript>对不起，浏览器不支持 JavaScript!</noscript>
+
+  <p>浏览器不支持JavaScript将显示写在noscript里面的文本</p>
+
+HTML Script 标签
+  标签	        描述
+  <script>	  定义客户端脚本
+  <noscript>	为不支持客户端脚本的用户定义备用内容
+
+-->
+
+
+<!--html head标签
+HTML <head> 元素
+  <head> 元素是一个元数据的容器（关于数据的数据），放在<html>标签和<body>标签之间。
+  HTML元数据是关于HTML文档的数据。元数据不显示。
+  元数据通常定义文档标题、字符集、样式、链接、脚本和其他元信息等。
+  下面描述元数据的一些标签: <title>, <style>, <meta>, <link>, <script>, 和 <base>
+
+HTML <title> 元素
+  <title> 元素定义文档的标题, 而且在所有的HTML / XHTML文件中都是必须的。
+  <title> 元素:
+    在浏览器选项卡中定义一个标题
+    在添加到收藏夹时为页面提供标题
+    在搜索引擎结果中显示页面标题
+  
+HTML <style> 元素
+  <style> 元素用于定义一个HTML页面样式信息：    
+
+HTML <link> 元素
+  <link> 元素用于链接外部样式表：<link rel="stylesheet" href="tryhtml_head_link.css">
+
+HTML <meta> 元素
+  <meta> 元素用于指定使用哪一个字符集、页面描述、关键字、作者和其他元数据。
+  元数据告诉浏览器如何显示内容, 告诉搜索引擎如何搜索 (keywords), 和其他Web服务。
+  定义使用的字符集：
+  <meta charset="UTF-8">
+  定义你网页的描述：
+  <meta name="description" content="Free Web tutorials">
+  定义搜索引擎的关键字：
+  <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+  定义一个页面的作者：
+  <meta name="author" content="John Doe">
+  每30秒刷新一次文档：
+  <meta http-equiv="refresh" content="30">
+  <meta> 标签的例子:
+  <meta charset="UTF-8">
+  <meta name="description" content="免费的Web开发教程">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="ghz">
+
+设置视窗
+  HTML5 介绍了一种让网页设计师接管视口控制方法,通过 <meta> 标签。
+  视窗是一个网页的用户可见区域。它根据设备不同而变化，例如，在手机上比在电脑屏幕上要小。
+  你可以包括下列<meta>视窗元素在你所有的网页中：
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta> 视窗元数据给浏览器如何控制页面的尺寸和缩放比例。
+  width=device-width部分设置页面宽度以跟踪设备的屏幕宽度（这取决于设备的不同）。
+  initial-scale=1.0 部分设置，当浏览器首次加载页面时，初始缩放级别。
+
+<script> 元素
+  <script> 元素用于定义客户端的JavaScript代码。
+  下面是 JavaScript 输出 "Hello JavaScript!" 到 id="demo" 中间的例子:
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+  </script>
+
+HTML <base> 元素
+  <base> 元素指定页中所有相对URL的基URL和基目标：
+  <base href="http://www.CodingDict.com/images/" target="_blank">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>编程字典</title>
+      <base href="http://www.CodingDict.com/images/" target="_blank">
+    </head>
+    <body>
+
+      <img src="html5.gif">
+      <p>设置了base URL之后，
+        浏览器将在这个地址"http://www.CodingDict.com/images/html5.gif"找图片"html5.gif"
+      </p>
+
+      <p><a href="http://www.CodingDict.com" target="_blank">编程字典</a></p>
+      <p>链接将在新窗口打开. 因为链接的target 设置为"_blank".</p>
+    </body>
+省略 <html>, <head> 和 <body>?
+  根据HTML5标准；<html>,<body>, 和<head> 标签可以省略。
+  
+HTML head 元素
+  标签	    描述
+  <head>	  定义文档的信息
+  <title>	  定义文档的标题
+  <base>	  定义页面上所有链接的默认地址或默认目标.
+  <link>	  定义文档和外部资源之间的关系.
+  <meta>	  定义了有关HTML文档的元数据
+  <script>	定义客户端脚本
+  <style>	  定义文档的样式信息
+
+-->
+
+<!--html布局
+HTML 布局元素
+  网站经常在多个栏目中显示内容（如杂志或报纸）。
+  HTML5 提供了新的语义元素定义一个Web页面的不同部分:
+  <header> - 定义文档或节的页眉
+  <nav> - 定义导航链接的容器
+  <section> - 定义文档中的一个部分
+  <article> - 定义单独的文章
+  <aside> - 定义内容边栏（如侧边栏）
+  <footer> - 定义文档或节的页脚
+  <details> - 定义了额外的细节
+  <summary> - 为<details>元素定义标题
+  有四种不同的方法来创建多列布局。每一种方式都有它的优点和缺点：
+    HTML 表格
+    CSS float 属性
+    CSS 框架
+    CSS flexbox
+
+选择哪一个呢？
+  HTML 表格 <table> 元素没有被设计成布局工具.! <table> 元素的设计目的是显示表格数据. 因此，不要为页面布局使用表格! 他们会给你的代码带来一个混乱。想象一下几个月后重新设计你的网站有多难。
+  提示：不要为页面布局使用表格！
+
+CSS 框架
+  如果你想创建快速布局，你可以使用一个框架, 像Bootstrap。
+
+CSS float 属性
+  使用CSS浮动属性做整个网站的布局是非常常见的. 浮动是很容易学习 - 
+  您只需要记住如何浮动和清除属性的工作. 缺点：浮动元素绑定到文档流，
+  这可能会损害灵活性。了解更多关于浮在我们的CSS浮动部分。
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>编程字典</title>
+      <style>
+      div.container {
+          width: 100%;
+          border: 1px solid gray;
+      }
+
+      header, footer {
+          padding: 1em;
+          color: white;
+          background-color: black;
+          clear: left;
+          text-align: center;
+      }
+
+      nav {
+          float: left;
+          max-width: 160px;
+          margin: 0;
+          padding: 1em;
+      }
+
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      nav ul a {
+          text-decoration: none;
+      }
+
+      article {
+          margin-left: 170px;
+          border-left: 1px solid gray;
+          padding: 1em;
+          overflow: hidden;
+      }
+      </style>
+    </head>
+    <body>
+
+      <div class="container">
+
+      <header>
+        <h1>城市列表</h1>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">巴黎</a></li>
+          <li><a href="#">东京</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>北京</h1>
+
+        <p>
+          北京，简称“京”，中华人民共和国首都、直辖市、国家中心城市、超大城市，全国政治中心、文化中心、国际交往中心、科技创新中心，
+          是中国共产党中央委员会、中华人民共和国中央人民政府和全国人民代表大会的办公所在地，中国中部战区司令部驻地。
+        </p>
+        <p>
+          2015年末，北京全市常住人口2170.5万人，比2014年末增加18.9万人。其中，常住外来人口822.6万人，占常住人口的比重为37.9%。
+          2015年北京市实现地区生产总值22968.6亿元，比2014年增长6.9%。
+        </p>
+
+      </article>
+
+      <footer>Copyright &copy; CodingDict.com</footer>
+
+      </div>
+
+
+
+    </body>
+    </html>
+
+CSS Flexbox
+  Flexbox 在CSS3新布局模式。
+  使用flexbox确保元件的行为可以预见当页面布局必须适应不同的屏幕尺寸和不同的显示设备。缺点：不能在IE10和早期的浏览器工作。
+  了解更多关于flexbox在我们的CSS flexbox章。
+-->
+
+
+<!--html实体
+HTML 实体
+  在HTML中，如何保留一些特殊字符.
+  如果在文本中使用小于（<）或大于（>）符号，浏览器可能会将它们与标签混合在一起.。
+  字符实体是用于在HTML显示保留字符。
+  一个字符实体看起来像这样：
+  &entity_name;
+  或者
+  &#entity_number;
+  要显示小于符号（<）我们必须写: &lt; 或者 &#60;
+  使用实体名称的优点: 一个实体名称很容易记住。 使用实体名称的缺点: 浏览器可能不支持所有实体名称，
+  但对数字的支持是好的。
+  经常用在HTML中的一个空格实体：&nbsp;
+  两个字隔开一个不换行的空间会粘在一起。
+  例如：
+  § 10
+  10 km/h
+  10 PM
+  另一个用途是阻止浏览器去到多余空格。
+  如果在文本中写入10个空格，浏览器将删除其中的9个. 为您的文本添加真正的空格,你可以使用 &nbsp; 字符实体。
+  不换行连字符 (&#8209;) 你可以使用连字符 (‑) 而不换行.
+
+其他一些有用的HTML字符实体
+  结果	    描述	    实体名称	    实体数字
+            空格	    &nbsp;	     &#160;
+  <	        小于      &lt;	        &#60;
+  >	        大于	    &gt;	        &#62;
+  &	      &的记号名称	  &amp;	      &#38;
+  "	        双引号	  &quot;	      &#34;
+  '	        单引号	   &apos;	      &#39;
+  ¢	         分	      &cent;	      &#162;
+  £	        英镑	    &pound;	      &#163;
+  ¥	          元	      &yen;	      &#165;
+  €	         欧元	       &euro;	    &#8364;
+  ©	         版权	       &copy;	    &#169;
+  ®	      注册商标	    &reg;	      &#174; 
+  >注意: 实体名称是区分大小写的。 --- ## 结合变音符号 发音符号是“字形”添加到一个信。
+   变音符号可以出现在一个字母上面和下面，或者一个或者两个字母之间。 变音符号可以用在字母数字字符的组合，产生一个特征，是不存在的字符集（编码）在页面中使用。 这里有一些例子：
+  标记	      字符	        结构	        结果
+  ̀	            a	          a&#768;	      à
+  ́	            a	          a&#769;	      á
+  ̂	            a 	        a&#770;	      â
+  ̃	            a	          a&#771;	      ã
+  ̀	            O	           O&#768;	    Ò
+  ́	            O	          O&#769;	      Ó
+  ̂	            O	           O&#770;	    Ô
+  ̃	            O	          O&#771;	      Õ
+-->
+
+
+<!--html表单
+The <form> Element
+  HTML <form> 元素定义用于收集用户输入的表单：
+    <form>
+    .
+    form 元素
+    .
+    </form>
+  HTML表单包含表单元素。
+  表单元素是不同类型的输入元素，如文本框、复选框、单选按钮、提交按钮等。
+    <input> 元素
+    <input> 元素是最重要的表单元素。
+    <input> 元素可以以多种方式显示，这取决于类型属性。
+  这里有一些例子：
+    Type	                Description
+    <input type="text">	  定义一个单行文本输入字段
+    <input type="radio">	定义单选按钮（用于选择许多选项之一）
+    <input type="submit">	定义提交按钮（提交表单）
+
+Text Input(文本输入)
+  <input type="text"> 定义文本输入的一个单行输入字段：
+  <form>
+  名字:<br>
+  <input type="text" name="firstname">
+  <br>
+  姓氏:<br>
+  <input type="text" name="lastname">
+  </form>
+  注意：表单本身是不可见的。还要注意文本字段的默认宽度为20个字符。
+
+Radio Button Input（单选按钮输入）
+  <input type="radio"> 定义一个单选电按钮。
+  单选按钮让用户选择一个有限数量的选择：
+  <form>
+    <input type="radio" name="gender" value="male" checked> 男<br>
+    <input type="radio" name="gender" value="female"> 女<br>
+    <input type="radio" name="gender" value="other"> 其他
+  </form>
+
+Submit Button（提交按钮）
+  <input type="submit"> 定义将表单数据提交给表单处理程序的按钮。
+  表单处理程序通常是处理输入数据的服务器脚本页面。
+  表单处理程序在表单action属性中指定：
+  <form action="action_page.php">
+    名字:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    姓氏:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+Action 属性
+  Action属性定义在提交表单时要执行的操作。
+  通常，当用户单击提交按钮时，表单数据将网页内容发送到服务器上。
+  在上面的例子中，表单数据是送到在服务器上被称为"action_page.php"的页面。此页包含处理表单数据的服务器端脚本：
+  <form action="action_page.php">
+  如果省略了操作属性，则将操作设置为当前页。
+
+Method 属性
+  method 属性指定当提交表单数据时的HTTP方法（GET或POST）：
+  <form action="action_page.php" method="get">
+  或者
+  <form action="action_page.php" method="post">
+什么时候使用 GET?
+  提交表单数据时的默认方法是 GET.
+  但是，当使用GET时，提交的表单数据将在页地址字段中可见：
+  action_page.php?firstname=Mickey&lastname=Mouse
+  Note: GET 发送敏感信息时不可使用! GET 最适合短，非敏感，一定量数据，因为它有大小限制太。
+什么时候使用POST?
+  如果表单数据包含敏感或个人信息，则总是使用POST。POST方法在页地址字段中不显示提交的表单数据.
+  POST没有大小限制，可以用来发送大量的数据。
+
+Name 属性
+  每个输入字段必须具有要提交的名称属性。
+  如果省略名称属性，则将不发送该输入字段的数据。
+  此示例只提交“姓氏”输入字段：
+
+使用<fieldset>给表单数据分组
+  <fieldset> 元素用于将相关数据以表单形式分组。
+  <legend> 元素为 <fieldset> 元素定义了一个标题。
+  <form action="action_page.php">
+    <fieldset>
+      <legend>个人信息:</legend>
+      名字:<br>
+      <input type="text" name="firstname" value="Mickey">
+      <br>
+      姓氏:<br>
+      <input type="text" name="lastname" value="Mouse">
+      <br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+这里是<form>属性的列表：
+  属性	               描述
+  accept-charset	  指定用于提交表单的字符集（默认页面的字符集）
+  action	          指定提交表单的地址（URL）（默认：提交页）。
+  autocomplete	    指定浏览器是否应该自动完成表单（默认:on）。
+  enctype	          指定提交数据的编码 (默认: url-encoded)。
+  method	          当提交表单时指定的HTTP方法 (默认: GET).
+  name	            指定用于标识窗体的名称 (DOM 使用:document.forms.name)
+  novalidate	      定浏览器不验证表单
+  target	          指定动作属性中的地址的目标. (默认:`_self`)
+
+-->
+
+
+<!--html表单元素
+<input> 元素
+  最重要的表单元素 <input> 元素。
+  <input>元素可以以多种方式显示，这取决于类型属性。
+  所有不同的输入类型都包含在下一章中。
+
+<select> 元素
+  <select> 元素定义了一个下拉列表： 
+    <form action="action_page.php">
+      <select name="cars">
+        <option value="volvo">沃尔沃</option>
+        <option value="bmw">宝马</option>
+        <option selected value="benz">奔驰</option>
+        <option value="audi">奥迪</option>
+      </select>
+      <br><br>
+      <input type="submit">
+    </form>
+  <option> 元素定义可选择的选项。
+    默认情况下，下拉列表中的第一项被选中。
+    若要定义预选选项，请将所选属性添加到选项中：
+
+<textarea> 元素
+  <textarea> 元素定义多行输入字段（文本区域）：
+    <form action="action_page.php">
+      <textarea name="message" rows="10" cols="30">这只猫正在花园里玩.</textarea>
+      <br>
+      <input type="submit">
+    </form>
+  rows 属性指定文本区域中可见的行数。
+  cols 属性指定文本区域的可见宽度。
+
+<button> 元素
+  <button> 元素定义了一个可点击的按钮:
+  <button type="button"
+  onclick="alert('Hello World!')">点击我!</button>
+
+HTML5 表单元素
+  HTML5 添加以下表单元素：
+    <datalist>
+    <keygen>
+    <output>
+  注意：浏览器不显示未知元素。旧浏览器不支持的新元素不会“破坏”您的网页
+
+HTML5 <datalist> 元素
+  <datalist> 元素为<input>元素指定预定义选项的列表。
+  用户将看到一个下拉列表的预定义选项，作为他们输入数据。
+  在<input>元素的列表属性，必须参照<datalist>元素的ID属性。
+    <form action="action_page.php">
+      <input list="browsers" name="browser">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+      <input type="submit">
+    </form>
+
+HTML5 <keygen> 元素
+  <keygen> 元素的目的是提供一个安全的方式来验证用户。
+  <keygen> 元素指定表单中的密钥对生成器字段。
+  提交表单时，生成两个密钥，一个是私有的，另一个是公共的.。
+  私钥存储在本地，公钥被发送到服务器。
+  公钥可用于生成客户端证书以在将来对用户进行身份验证。
+  <form action="action_page.php">
+    用户名: <input type="text" name="user">
+    <br><br>
+    加密: <keygen name="security">
+    <br><br>
+    <input type="submit">
+  </form>
+
+HTML5 <output> 元素
+  <output> 元素表示计算的结果（如由脚本执行的计算结果）。
+  <form action="action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  </form>
+
+HTML 表单元素
+  标签	        描述
+  <form>	      定义了用户输入HTML表单
+  <input>	      定义一个输入控件
+  <textarea>	  定义一个多行输入控件（文本区）
+  <label>	      定义了一个标签为 <input> 元素
+  <fieldset>	  分组表单中的相关元素
+  <select>	    定义一个下拉列表
+  <optgroup>	  在下拉列表中定义一组相关选项.
+  <option>	    定义一个下拉列表中的选项
+  <button>	    定义一个可点击的按钮
+  <datalist>	  指定输入控件的预定义选项列表.
+  <keygen>	    定义密钥对生成器字段（用于表单）
+  <output>  	  定义计算的结果
+-->
+
+<!--html表单输入类型
+Input 类型文本
+  <input type="text">定义一行文本输入字段：
+
+Input 类型密码
+  <input type="password"> 定义一个密码字段：在密码字段的字符被屏蔽（显示为星号或圆）。
+
+Input 类型提交
+  <input type="submit"> 定义将表单数据提交给表单处理程序的按钮。
+  表单处理程序通常是能够处理输入数据的脚本的服务器页面。
+  表单处理程序指定表单的action属性：
+  如果忽略提交按钮的值属性，按钮将得到默认文本：
+
+Input 类型重置
+  <input type="reset"> 定义重置按钮，将所有表单值重置为默认值：
+  <form action="action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
+  如果您更改输入值，然后单击“重置”按钮，表单数据将重置为默认值。
+
+Input 类型单选按钮
+  <input type="radio"> 定义一个单选按钮。
+  单选按钮让用户只选择一个：
+  <form action="action_page.php">
+    <input type="radio" name="gender" value="male" checked> 男<br>
+    <input type="radio" name="gender" value="female"> 女<br>
+    <input type="radio" name="gender" value="other"> 其他<br><br>
+    <input type="submit">
+  </form>
+
+Input 类型多选
+  <input type="checkbox"> 定义了一个复选框。
+  复选框让用户选择零个或多个有限的选择选项。
+  <form action="action_page.php">
+    <input type="checkbox" name="vehicle1" value="Bike">我有一辆直行车
+    <br>
+    <input type="checkbox" name="vehicle2" value="Car">我有一辆汽车
+    <br><br>
+    <input type="submit">
+  </form>
+
+Input 类型按钮
+  <input type="button"> 定义一个按钮:
+  <input type="button"
+  onclick="alert('Hello World!')" value="点击我!">
+
+HTML5 Input类型
+  HTML5 添加了几种新的输入类型：
+  color
+  date
+  datetime
+  datetime-local
+  email
+  month
+  number
+  range
+  search
+  tel
+  time
+  url
+  week
+  旧web浏览器不支持的新输入类型将表现为 <input type="text">.
+
+Input 类型数字
+  <input type="number"> 定义一个数字输入字段。
+  您还可以设置限制什么号码接受。
+  下面的示例显示数字输入字段，您可以在其中输入值从1到5：
+  <form action="action_page.php">
+    数量 (1到5之间):
+    <input type="number" name="quantity" min="1" max="5">
+    <input type="submit">
+  </form>
+
+nput 限制
+  下面列出了一些常见的输入限制（有些是新的HTML5）：
+  属性	        描述
+  disabled  	指定一个输入字段应该是 disabled
+  max	        指定输入字段的最大值.
+  maxlength 	指定输入字段的字符的最大数目.
+  min	        定输入字段的最小值.
+  pattern	    指定检查输入值的正则表达式.
+  readonly	  指定只读输入字段（不能更改）.
+  required  	指定需要输入字段（必须填写）
+  size	      指定输入字段的宽度（字符）.
+  step	      指定输入字段的合法编号间隔.
+  value	      指定输入字段的默认值.
+
+Input 类型日期
+  <input type="date">用于包含日期的输入字段。
+  这取决于浏览器的支持，日期选择器可以显示在输入字段。
+  <form action="action_page.php">
+    Birthday:
+    <input type="date" name="bday">
+    <input type="submit">
+  </form>
+  您还可以添加日期的限制：
+  <form action="action_page.php">
+      输入一个 1980-01-01 之前的日期:<br>
+      <input type="date" name="bday" max="1979-12-31"><br><br>
+      输入一个 2000-01-01 之后的日期:<br>
+      <input type="date" name="bday" min="2000-01-02"><br><br>
+      <input type="submit">
+  </form>
+
+Input 类型颜色
+  <input type="color"> 用于包含颜色的输入字段。
+  这取决于浏览器的支持，颜色选择器可以显示在输入字段。
+  <form action="action_page.php">
+    选择一个你喜欢的颜色:
+    <input type="color" name="favcolor" value="#ff0000">
+    <input type="submit">
+  </form>
+
+Input 类型范围
+  <input type="range"> 用于输入字段，该字段应包含范围内的值。
+  根据浏览器支持，输入字段可以显示为滑块控件。
+  <form action="action_page.php" method="get">
+    点:
+    <input type="range" name="points" min="0" max="10">
+    <input type="submit">
+  </form>
+  您可以使用以下属性来指定限制：最小值，最大值，步长和值。
+
+Input 类型月份
+  <input type="month"> 允许用户选择一个月和一年。
+  这取决于浏览器的支持，日期选择器可以显示在输入字段。
+  <form action="action_page.php">
+    你的生日 (年和月):
+    <input type="month" name="bdaymonth">
+    <input type="submit">
+  </form>
+
+Input 类型星期
+  <input type="week"> 允许用户选择一个星期和一年。
+  这取决于浏览器的支持，日期选择器可以显示在输入字段。
+  <form action="action_page.php">
+    选择一个星期:
+    <input type="week" name="year_week">
+    <input type="submit">
+  </form>
+
+Input 类型时间
+  <input type="time"> 允许用户选择时间（没有时区）。
+  这取决于浏览器的支持，一时间选择器可以显示在输入字段。
+  <form action="action_page.php">
+    选择一个时间:
+    <input type="time" name="usr_time">
+    <input type="submit">
+  </form>
+
+Input 类型本地日期时间
+  <input type="datetime-local">指定没有时区的日期和时间输入字段。
+  这取决于浏览器的支持，日期选择器可以显示在输入字段。
+  <form action="action_page.php">
+    生日 (日期和时间):
+    <input type="datetime-local" name="bdaytime">
+    <input type="submit" value="Send">
+  </form>
+
+Input 类型 Email
+  <input type="email">用于包含电子邮件地址的输入字段。
+  根据浏览器的支持，提交时可以自动验证电子邮件地址。
+  一些智能手机识别的电子邮件类型，并添加.com的键盘，以配合电子邮件输入。
+  <form action="action_page.php">
+    E-mail:
+    <input type="email" name="email">
+    <input type="submit">
+  </form>
+
+Input 类似搜索
+  <input type="search"> 用于搜索字段（搜索字段的行为像常规文本字段）。
+  <form action="action_page.php">
+    搜索:
+    <input type="search" name="googlesearch">
+    <input type="submit">
+  </form>
+
+Input 类型电话
+  <input type="tel"> 用于包含电话号码的输入字段。
+  电话型目前只在Safari 8支持。
+  <form action="action_page.php">
+    电话:
+    <input type="tel" name="usrtel">
+    <input type="submit">
+  </form>
+
+Input 类型 Url地址
+  <input type="url"> 用于包含URL地址的输入字段。
+  根据浏览器的支持，提交时可以自动验证URL字段。
+  一些智能手机识别的URL类型，并添加.com到键盘，以配合URL输入。
+  <form action="action_page.php">
+    添加你的主页:
+    <input type="url" name="homepage">
+    <input type="submit">
+  </form>
+-->
+
+
+<!--html表单属性
+value 属性
+  value属性指定输入字段的初始值： 
+  <form action="#">
+    First name:<br>
+    <input type="text" name="firstname" value="John">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+  </form>
+
+readonly 属性
+  readonly 属性指定输入字段只读（不能更改）：
+  <form action="#">
+    First name:<br>
+    <input type="text" name="firstname" value ="John" readonly>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+  </form>
+
+disabled 属性
+  disabled 属性指定输入字段已禁用。
+  一个disabled的输入字段是不可用的和不可点击的，提交表单时其value将不被发
+  <form action="#">
+    First name:<br>
+    <input type="text" name="firstname" value ="John" disabled>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+  </form>
+
+size 属性
+  size 属性指定输入字段的大小（字符）：
+  <form action="#">
+    First name:<br>
+    <input type="text" name="firstname" value="John" size="40">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+  </form>
+
+maxlength 属性
+  maxlength 属性指定输入字段的最大允许长度：
+  <form action="#">
+    First name:<br>
+    <input type="text" name="firstname" maxlength="10">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+  </form>
+  使用maxlength属性，输入字段将不接受超过所允许的字符数。
+  maxlength 属性不提供任何反馈。如果你想提醒用户，您必须编写JavaScript代码。
+  注意：输入的限制并非万无一失，JavaScript提供了许多方法来增加非法输入。要安全地限制输入，它必须由接收器（以及服务器）检查！
+
+HTML5 属性
+  HTML5 针对<input>添加以下属性 :
+  autocomplete
+  autofocus
+  form
+  formaction
+  formenctype
+  formmethod
+  formnovalidate
+  formtarget
+  height and width
+  list
+  min and max
+  multiple
+  pattern (regexp)
+  placeholder
+  required
+  step
+下面两个是针对 <form>的:
+  autocomplete
+  novalidate
+
+autocomplete 属性
+  autocomplete 属性指定表单或输入字段应该打开或关闭自动完成功能。
+  当autocomplete是on时，输入值之前浏览器会自动完成基于用户输入值。
+  提示：它可能是 autocomplete 针对表单是 "on"，针对输入是"off"，反之亦然。
+  autocomplete 属性和 <form> <input> 类型: text, search, url, tel, email, password, datepickers, range, 和 color 一起工作。
+  <form action="action_page.php" autocomplete="on">
+    名字:<input type="text" name="fname"><br>
+    姓氏: <input type="text" name="lname"><br>
+    E-mail: <input type="email" name="email" autocomplete="off"><br>
+  <input type="submit">
+</form>
+  提示：在某些浏览器可能需要激活自动完成功能才能工作。
+
+novalidate 属性
+  novalidate 属性是一个<form>属性.
+  目前，novalidate 指定提交时不应验证表单数据。
+  <form action="action_page.php" novalidate>
+    E-mail: <input type="email" name="user_email">
+    <input type="submit">
+  </form>
+
+autofocus 属性
+  autofocus 属性指定输入字段在页面加载时自动获取焦点。
+  <form action="action_page.php">
+    名字:<input type="text" name="fname" autofocus><br>
+    姓氏: <input type="text" name="lname"><br>
+    <input type="submit">
+  </form>
+
+form 属性
+  属性指定一个<input>元素属于一个或多个窗体。
+  提示：要引用多个表单，请使用空格分隔的表单ID列表。
+  <form action="action_page.php" id="form1">
+    First name: <input type="text" name="fname"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p>"Last name" 自动在form元素的外面，但是还是form的一部分。</p>
+  Last name: <input type="text" name="lname" form="form1">
+
+formaction 属性
+  formaction 属性指定在提交表单时将处理输入表单的URL。
+  formaction 属性重写<form>元素的action属性。
+  formaction 属性用于 type="submit" 和 type="image"。
+  <form action="action_page.php">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input type="submit" value="Submit"><br>
+    <input type="submit" formaction="demo_admin.asp" value="Submit as admin">
+  </form>
+
+formmethod 属性
+  formmethod 属性定义了发送表单数据到action的URL的HTTP方法。
+  formmethod 属性覆盖<form>元素的方法.
+  formmethod 属性能用于 type="submit" 和 type="image"。
+  <form action="action_page.php" method="get">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formmethod="post" formaction="demo_post.asp" value="Submit using POST">
+  </form>
+
+formnovalidate 属性
+  formnovalidate 覆盖<form>的 novalidate属性。
+  formnovalidate 属性用于 type="submit".
+  <form action="action_page.php">
+    E-mail: <input type="email" name="userid"><br>
+    <input type="submit" value="Submit"><br>
+    <input type="submit" formnovalidate value="Submit without validation">
+  </form>
+
+formtarget 属性
+  formtarget 属性指定一个名称或关键字，表示在提交表单后接收的响应的显示位置。
+  formtarget 属性覆盖<form>元素的 target属性。
+  formtarget 属性用于 type="submit" 和 type="image"。
+  <form action="action_page.php">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input type="submit" value="Submit as normal">
+    <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+  </form>
+
+height 和 width 属性
+  height 和 width 属性 指定<input type="image">元素的高度和宽度.
+  总是指定图像的大小。如果浏览器不知道大小，图像加载时页面会闪烁。
+  <form action="action_page.php">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input type="image" src="../img/img_submit.gif" alt="Submit" width="48" height="48">
+  </form>
+
+list 属性
+  list 属性应用于 <datalist> 元素，为<input>元素包含预定义的选项。
+  <form action="demo_form.php" method="get">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <input type="submit">
+  </form>
+
+min 和 max 属性
+  min 和 max 属性指定<input>的最小值和最大值。
+  min 和 max 属性与下列输入类型一起工作: number, range, date, datetime-local, month, time 和 week。
+  <form action="action_page.php">
+    输入一个1979-12-31之前的日期:
+    <input type="date" name="bday" max="1979-12-31"><br>
+    输入一个2000-01-01之后的日期:
+    <input type="date" name="bday" min="2000-01-02"><br>
+    数量 (1到5之间):
+    <input type="number" name="quantity" min="1" max="5"><br>
+    <input type="submit">
+  </form>
+
+multiple 属性
+  multiple 属性指定允许用户为<input>元素输入多个值。
+  multiple 属性具有下列输入类型: email 和 file。
+  <form action="action_page.php">
+    选择图片: <input type="file" name="img" multiple>
+    <input type="submit">
+  </form>
+
+pattern 属性
+  pattern 属性指定对<input>元素的值进行检查的正则表达式。
+  pattern 属性具有下列输入类型: text, search, url, tel, email 和 password.
+  提示：使用全局标题属性来描述帮助用户的模式。
+  提示：在我们的JavaScript教程中学习更多关于正则表达式。
+  <form action="action_page.php">
+    国家代码: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+    <input type="submit">
+  </form>
+
+placeholder 属性
+  placeholder 属性指定一个提示，它描述输入字段的期望值（示例值或格式的简短说明）。
+  在用户输入值之前，提示将显示在输入字段中。
+  placeholder 属性具有下列输入类型: text, search, url, tel, email和password.
+  <form action="action_page.php">
+    <input type="text" name="fname" placeholder="First name"><br>
+    <input type="text" name="lname" placeholder="Last name"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+required 属性
+  required 属性指定提交表单前必须填写输入字段。
+  required 属性具有下列输入类型: text, search, url, tel, email, password, date pickers, number, checkbox, radio和file。
+  <form action="action_page.php">
+    用户名: <input type="text" name="usrname" required>
+    <input type="submit">
+  </form>
+
+step 属性
+  step 属性为<input>元素指定输入步长。
+  例如: 如果step="3", 间隔数字 -3, 0, 3, 6等.
+  step 属性具有下列输入类型: number, range, date, datetime-local, month, time 和 week
+  <form action="action_page.php">
+    <input type="number" name="points" step="3">
+    <input type="submit">
+  </form>
+-->
+
+
+<!--html5简介
+什么是新的HTML5?
+  在HTML5中 DOCTYPE声明非常简单:
+  <!DOCTYPE html>
+  字符编码 (charset) 声明也非常简单:
+  <meta charset="UTF-8">  在HTML5中默认的字符编码是UTF-8.
+
+HTML5 新元素
+  HTML5中最常用的新元素有:
+    新 语义元素 像 <header>, <footer>, <article>, <section>.
+    新 表单元素属性 像 number, date, time, calendar, range.
+    新 图形元素: <svg> 和 <canvas>.
+    新 多媒体元素: <audio> 和 <video>.
+  在下一章中，HTML5的支持，你将学会如何使用旧的浏览器来处理“未知”（新）的HTML元素.
+
+新HTML5 APIs (应用编程接口)
+  最常用的新HTML5 API有:
+  HTML 地理定位
+  HTML 拖拽
+  HTML 本地存储
+  HTML 应用缓存
+  HTML 线程
+  HTML 消息推送
+  注意: 本地存储是一个Cookie的强大替代.
+
+在HTML5删除的元素
+  以下的HTML4元素，在HTML5中已被删除:
+  删除元素	    替换元素
+  <acronym>	    <abbr>
+  <applet>	    <object>
+  <basefont>	  CSS
+  <big>	        CSS
+  <center>	    CSS
+  <dir>	        <ul>
+  <font>	      CSS
+  <frame>	 
+  <frameset>	 
+  <noframes>	 
+  <strike>	    CSS, <s>, or <del>
+  <tt>        	CSS
+  在本章的HTML5迁移中，您将学习如何轻松地从HTML4迁移到HTML5.
+
+HTML 历史
+  从万维网的早期，已经有很多的HTML版本:
+  Year	Version
+  1989	Tim Berners-Lee invented www
+  1991	Tim Berners-Lee invented HTML
+  1993	Dave Raggett drafted HTML+
+  1995	HTML Working Group defined HTML 2.0
+  1997	W3C Recommendation: HTML 3.2
+  1999	W3C Recommendation: HTML 4.01
+  2000	W3C Recommendation: XHTML 1.0
+  2008	WHATWG HTML5 First Public Draft
+  2012	WHATWG HTML5 Living Standard
+  2014	W3C Recommendation: HTML5
+  2016	W3C Candidate Recommendation: HTML 5.1
+  从1991到1999，HTML开发从1版到4版.
+  在2000年，万维网联盟（W3C）推荐 XHTML 1.0
+  XHTML语法很严格, 开发人员被迫写有效的和“完善”的代码.
+  2004，W3C决定关闭HTML的发展，支持XHTML.
+  2004，WHATWG（Web超文本应用技术工作组）成立.
+  WHATWG想开发HTML，符合网络需要如何被使用，并且能够向后兼容旧版本的HTML.
+  在2004 - 2006，WHATWG的主要浏览器厂商获得支持.
+  2006，W3C宣布他们将支持WHATWG.
+  2008、第一次公开征求意见稿发布HTML5.
+  2012，WHATWG和W3C决定分离:
+  WHATWG想开发HTML作为“实时标准”.实时标准不断更新和提高。可以添加新功能，并且不删除旧功能。.
+  WHATWG HTML5 Living Standard 发表于2012，并不断更新.
+  W3C希望开发一个明确的HTML5和XHTML标准.
+  W3C HTML5 Recommendation 发布于2014年8月28日.
+  W3C 也发布了 HTML 5.1 Candidate Recommendation 在2016年2月21日.
+-->
+
+
+<!--HTML5浏览器
+HTML5 浏览器支持
+  HTML5 支持所有现代浏览器.
+  此外，所有的浏览器，旧的和新的，自动处理未被识别的元素作为内联元素.
+  因为这样，你可以“告诉”的旧的浏览器来处理“未知”的HTML元素.
+  甚至可以教IE6（XP 2001）如何处理未知的HTML元素.
+
+定义语义元素作为块元素
+  HTML5定义八个新的语义元素。所有这些都是块级元素。.
+  在旧浏览器中确保正确的行为,你可设置元素的 display属性为block:
+  header, section, footer, aside, nav, main, article, figure {
+      display: block;
+  }
+
+加入新的元素到HTML
+  你也能添加新的元素到HTML页面.
+  这个实例添加一个新的元素叫做 <myHero> 到HTML页面, 并且定义了一个样式:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>编程字典</title>
+    <script>document.createElement("myHero")</script>
+    <style>
+      myHero {
+          display: block;
+          background-color: #dddddd;
+          padding: 50px;
+          font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>一个标题</h1>
+    <myHero>我的英雄元素</myHero>
+
+  </body>
+  </html>
+  JavaScript 语句 document.createElement("myHero") 需要创建在IE 9或更早的版本中.
+
+使用IE8的问题
+  你可以使用上面描述的解决方案为所有新的HTML5元素.
+  然而, IE8 (和更早的版本) 不允许未知元素的样式!
+  幸运的是, Sjoerd Visscher 创建了 HTML5Shiv! HTML5Shiv 是一个JavaScript类库，可以使IE9或者更早的版本识别新的HTML5元素。
+  为了兼容IE9或者更早的版本，你将需要html5shiv.
+
+
+HTML5Shiv 语法
+  HTML5Shiv 被放在<head> 标签里面.
+  HTML5Shiv 是一个javascript文件，通过<script>标签引用.
+  当你使用新的HTML5元素，例如: <article>, <section>, <aside>, <nav>, <footer>时，你可以使用HTML5Shiv来兼容旧的IE浏览器。
+  你可以从github下载最新的HTML5shiv版本或者使用CDN https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
+  语法
+  <head>
+    《!--[if lt IE 9]》
+      <script src="/js/html5shiv.js"></script>
+    <![endif]--》
+  </head>
+
+HTML5Shiv 实例
+如果你不想下载和存储html5shiv在您的网站上，你可以参考在CDN网站的版本.
+HTML5Shiv 脚本必须放在<head>元素里面, 样式如下:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  《!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]--》
+  <title>编程字典</title>
+</head>
+<body>
+  <section>
+  <h1>著名城市</h1>
+  <article>
+    <h2>伦敦</h2>
+    <p>伦敦是英国的首都。它是英国人口最多的城市，拥有超过1300万居民的大都市.</p>
+  </article>
+  <article>
+    <h2>巴黎</h2>
+    <p>巴黎是法国首都和人口最多的城市.</p>
+  </article>
+  <article>
+    <h2>东京</h2>
+    <p>东京是日本的首都，东京大区的中心，也是世界上人口最多的大都市区.</p>
+  </article>
+  </section>
+</body>
+  </html>
+-->
+
+
+<!--html5新元素
+新语义/结构元素
+  HTML5为了更好的文档结构提供了新的元素：
+
+  标签	          描述
+  <article>	    定义文档中的文章
+  <aside>	      从页面内容中定义边栏内容
+  <bdi>	        定义可能与其他文本以不同方向格式化的文本的一部分
+  <details>	    定义用户可以查看或隐藏的其他详细信息
+  <dialog>	    定义对话框或窗口
+  <figcaption>	为<figure> 元素定义一个标题
+  <figure>	    定义一个自包含内容，, 像 插图, 图表, photos, 代码列表等.
+  <footer>	    为文档或节定义页脚
+  <header>	    文档或节定义页眉
+  <main>	      定义文档的主要内容
+  <mark>	      定义标记或突出文本
+  <menuitem> 	  定义一个命令或菜单项，用户可以从一个弹出式菜单调用
+  <meter>	      在已知范围内定义标量测量（量规）
+  <nav>	        定义文档中的导航链接
+  <progress>	  定义任务的进度
+  <rp>	        定义不支持Ruby注释的浏览器中显示的内容
+  <rt>	        定义字符的解释/发音（东亚印刷）
+  <ruby>	      定义ruby注释（东亚印刷）
+  <section>	    定义文档中的一节
+  <summary>	    定义可见标题 为 a <details> 元素
+  <time>	      定义日期/时间
+  <wbr>	        定义可能的换行符
+  阅读更多关于HTML5 语义元素.http://codingdict.com/article/6098
+
+  新的表单元素
+  标签	        描述
+  <datalist>	定义输入控件的预定义选项
+  <keygen>	  定义密钥对生成器字段（用于表单）
+  <output>	  定义计算结果
+
+新的输入类型
+  新的Input类型	
+    color
+    date
+    datetime
+    datetime-local
+    email
+    month
+    number
+    range
+    search
+    tel
+    time
+    url
+    week
+  新的Input属性
+    autocomplete
+    autofocus
+    form
+    formaction
+    formenctype
+    formmethod
+    formnovalidate
+    formtarget
+    height and width
+    list
+    min and max
+    multiple
+    pattern (regexp)
+    placeholder
+    required
+    step
+
+HTML5 -新属性语法
+  HTML5 允许四种不同的属性语法.
+  这个例子演示了使用一个不同的语法在 <input> 标签中:
+  Type	    Example
+  空	      <input type="text" value="John" disabled>
+  不带引号	<input type="text" value=John>
+  双引号	  <input type="text" value="John Doe">
+  单引号	  <input type="text" value='John Doe'>
+  在HTML5中，所有四个语法可以使用，这取决于属性的需要.
+
+HTML5 图形
+  标签	      描述
+  <canvas>	使用JavaScript画图
+  <svg>	    绘制可伸缩矢量图形
+
+新多媒体元素
+  标签	    描述
+  <audio>	  定义声音内容
+  <embed>	  定义外部应用程序的容器 (像 plug-ins)
+  <source>	定义 <video> and <audio>的源
+  <track>	  定义<video> and <audio>的轨迹
+  <video>	  定义视频或电影内容
+-->
+
+
+<!--html语义元素
+语义学是研究语言中词义的一种语言.
+语义元素 = 元素有意义.
+
+什么是语义元素?
+  语义元素清楚地描述了它对浏览器和开发人员的意义.
+  非语义 元素的实例: <div> 和 <span> - 不能告诉它的内容.
+  语义 元素的实例: <form>, <table>, 和 <article> - 清楚的定义它的内容.
+
+在HTML5中新的语义元素
+许多网站包含HTML代码像: <div id="nav"> <div class="header"> <div id="footer">标示导航、页眉和页脚.
+
+HTML5提供了新的语义元素定义一个Web页面的不同部分:
+  <article>
+  <aside>
+  <details>
+  <figcaption>
+  <figure>
+  <footer>
+  <header>
+  <main>
+  <mark>
+  <nav>
+  <section>
+  <summary>
+  <time>
+  
+HTML5 <section> 元素
+  <section> 元素定义文档中的一个部分.
+  根据W3C's 对 HTML5 的描述: "A section is a thematic grouping of content, typically with a heading."
+  主页通常可以分为引言、内容和联系人信息几个部分.
+  <section>
+  <h1>WWF</h1>
+    <p>世界自然基金会（WWF）是一个国际组织工作，对于保护问题，以及环境修复研究，前身为世界野生动物基金会。世界自然基金会成立于1961。</p>
+  </section>
+
+HTML5 <article> 元素
+  <article> 元素规定不依赖，自包含内容.
+  一个article应该是有意义的，它应该有可能独立地阅读它的其余部分的网站.
+  下面是 <article> 元素的使用实例:
+    论坛 post
+    博客 post
+    新闻 article
+  <article>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission is to stop the degradation of our planet's natural environment,
+    and build a future in which humans live in harmony with nature.</p>
+  </article>
+
+在 <section> 中嵌套<article> 或者相反?
+  <article> 元素规定不依赖，自包含内容.
+  <section> 元素定义文档你的一个段落.
+  我们可以使用定义来决定如何嵌套这些元素? 不，我们不能!
+  因此，你会看到在HTML页面中<section>元素包含<article> 元素, <article>元素也可以包含<sections> elements.
+  你也会看到 <section> 元素包含 <section> 元素, 并且 <article> 元素包含 <article> 元素.
+
+HTML5 <header> 元素
+  <header> 元素指定一个文档或者章节的标题.
+  <header> 元素应作为介绍内容的容器.
+  在一个文档中可以有多个 <header> 元素.
+  下面的实例为文章定义一个标题:
+  <article>
+    <header>
+      <h1>What Does WWF Do?</h1>
+      <p>WWF's mission:</p>
+    </header>
+    <p>WWF's mission is to stop the degradation of our planet's natural environment,
+    and build a future in which humans live in harmony with nature.</p>
+  </article>
+
+HTML5 <footer> 元素
+  <footer> 元素指定文档或者章节的页脚.
+  <footer> 元素应包含其包含元素的信息.
+  页脚通常包含文档的作者、版权信息、使用条款的链接、联系人信息等。
+  在一个文档中你可以有几个 <footer> 元素.
+  <footer>
+    <p>Posted by: Hege Refsnes</p>
+    <p>Contact information: <a href="mailto:someone@example.com">
+    someone@example.com</a>.</p>
+  </footer>
+
+HTML5 <nav> 元素
+  <nav> 素定义了一组导航链接.
+  注意，不是所有的链接的文件应该在一个<nav>元素里面. <nav> 元素仅用于主要的导航链接块.
+  <nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+  </nav>
+
+HTML5 <aside> 元素
+  <aside> 元素定义一些边栏内容(像边栏).
+  边栏内容应与周围内容有关
+  <p>My family and I visited The Epcot center this summer.</p>
+  <aside>
+    <h4>Epcot Center</h4>
+    <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+  </aside>
+
+HTML5 <figure> 和 <figcaption> 元素
+  图形标题的目的是为图像添加视觉解释.
+  HTML5, 图像和标题可以组合在 <figure> 元素里面:
+  <figure>
+    <img src="pic_mountain.jpg" alt="The Pulpit Rock" width="304" height="228">
+    <figcaption>Fig1. - The Pulpit Rock, Norway.</figcaption>
+  </figure>
+  <img>元素定义一个图片, <figcaption> 元素定义标题.
+
+为什么使用语义元素?
+  使用HTML4, 开发者使用自己的id/class为这些元素: header, top, bottom, footer, menu, navigation, main, container, content, article, sidebar, topnav, 等.
+  这使得搜索引擎无法识别正确的网页内容.
+  使用新的HTML5元素 (<header> <footer> <nav> <section> <article>), 这将变得更容易.
+  根据W3C语义的理想：“可以让数据共享和跨应用程序重用，包括企业和社区。
+
+在HTML5中的语义元素
+下面是一个按照字母顺序在HTML5语义元素列表.
+
+完整的HTML5 参考.
+  标签          描述
+  <article>	    定义一篇文章
+  <aside>	      从页面内容中定义内容
+  <details>	    定义用户可以查看或隐藏的其他详细信息
+  <figcaption>	定义<figure> 元素的标题
+  <figure>  	  指定独立的内容, 像 图表, 插图, 照片, 代码片段等.
+  <footer>	    为文档或节定义页脚
+  <header>	    为文档或节指定页眉
+  <mark>	      定义标记/突出文本
+  <nav>	        定义导航链接
+  <summary>	    为<details> 元素定义一个标题
+  <time>	      定义日期/时间
+-->
+
+
+<!--html5迁移
+从HTML4迁移到HTML5
+  本章讲述如何从 HTML4 迁移 到 HTML5.
+
+  本章演示了如何把一个HTML4页面转换为HTML5页面，而不破坏原始的内容和结构。
+
+  你可以采用相同的方法，从XHTML迁移到HTML5.
+
+  典型 HTML4	            典型 HTML5
+  <div id="header">	      <header>
+  <div id="menu">	        <nav>
+  <div id="content">	    <section>
+  <div class="article">	  <article>
+  <div id="footer">	      <footer>
+
+<article> <section> 和 <div>之间的区别
+  这是一个令人困惑的（缺乏）在HTML5标准差, 在 <article> <section> 和 <div>之间.
+  在HTML5标准里面, <section> 元素被定义为相关元素的块.
+  <article> 元素被定义为一个完整的、独立的相关元素块.
+  <div> 元素定义为子元素的块.
+  如何解释?
+  在上面的例子中, 我们使用 <section> 作为相关<articles>的容器.
+  但是, 我们也使用<article>作为其他article的容器.
+  以下是一些不同的例子:
+  <article> 在 <article> 里面:
+-->
+
+
+<!--html5语法
+HTML编码惯例
+Web开发人员在使用HTML时，往往有不确定的编码风格和语法
+  2000和2010之间，许多Web开发人员从HTML转换到XHTML.
+  在XHTML中，开发人员被迫写出有效的和结构良好的代码.
+  HTML5说到的代码验证有点儿马虎.
+
+聪明和未来的证明
+  一个一贯使用的风格，让别人了解你的HTML更容易.
+  在未来，如XML阅读器，可以阅读你的HTML.
+  使用形式好的更“接近XHTML的”语法，可以更聪明.
+  始终保持您的代码整洁，干净，并形成良好.
+
+使用正确的文档类型
+  始终将文档类型声明为文档中的第一行:
+  <!DOCTYPE html>
+  如果你想私有小写标签，您可以使用:
+  <!doctype html>
+
+使用小写的元素名称
+  HTML5允许混合大写和小写字母的元素名称.
+  我们建议使用小写元素名称，因为:
+  混合大写和小写的名字是不好的
+  开发者通常使用小写名称 (像在XHTML里面一样)
+  小写字母看起来更干净
+  小写更容易写
+
+关闭所有的HTML元素
+  在HTML5中，你不需要关闭所有的元素 (例如 <p> 元素).
+  我们建议您关闭所有的HTML元素.
+
+关闭空的HTML元素
+  在HTML5中，是否关闭空元素是可选的.
+  这也行
+  <meta charset="utf-8" />
+  然而，关闭元素，使用反斜杠（/）是XHTML和XML要求的.
+  如果您希望XML软件访问您的页面，最好关闭元素!
+
+使用小写属性名称
+  HTML5允许混合大写和小写属性名称.
+  我们建议使用小写属性名称，因为:
+    混合大写和小写的名字是不好的
+    开发者通常使用小写名称 (像在XHTML里面一样)
+    小写字母看起来更干净
+    小写更容易写
+
+引号括住属性值
+  HTML5允许属性值没有引号.
+  我们建议引用属性值，因为:
+    混合大写和小写的值是不好的
+    引号更容易阅读
+    如果值包含空格，则必须使用引号
+
+图像属性
+  总是为图片添加“alt”属性。当某些原因无法显示图像时，此属性非常重要。此外，始终定义图像宽度和高度。
+  它减少了闪烁，因为浏览器可以预留空间的图像加载前。
+
+空间与等号
+  HTML5允许在等号的空格。但空间更小更容易阅读，更好地组合实体.
+
+避免长代码行
+  使用HTML编辑器时，它是向右滚动不便读取右边的HTML代码.
+  尽量避免代码行长于80个字符.
+
+空白线和缩进
+  不要没有原因的添加空白行.
+  为了可读性，请添加空行以分隔大的或逻辑的代码块.
+  为可读性，添加两个空格的缩进。不要使用制表键.
+  不要使用不必要的空白行和缩进。这是没有必要的缩进每一个元素:
+
+忽略 <html> 和 <body>?
+  在HTML5标准中，<html>标签和 <body>标签可以省略。
+  下面的代码将验证HTML5:
+  <!DOCTYPE html>
+  <head>
+    <title>页面标题</title>
+  </head>
+  <h1>这是一个标题</h1>
+  <p>这是一个段落.</p>
+
+  我们不推荐忽略 <html> 和 <body> 标签.
+  <html> 元素是文档根. 它推荐来设置页面语言:
+  <!DOCTYPE html>
+  <html lang="en-US">
+  对于可访问应用程序（屏幕阅读器）和搜索引擎来说，声明语言是很重要的.
+  忽略 <html> 或者 <body> 可以导致DOM和XML的软件崩溃.
+  忽略 <body> 可以在旧浏览器中产生错误 (IE9).
+
+忽略 <head>?
+  在HTML5标准的<head>标签也可以省略
+  默认情况下，浏览器将添加所有元素在<body>之前 , 到默认的 <head> 元素.
+  你可以减少HTML的复杂性, 忽略<head>标签:
+    我们不建议省略 <head>标签.
+  省略标签是Web开发人员不熟悉。它需要时间来确立为准则.
+
+Meta Data
+  <title> 在HTML5的元素是必需的。使标题尽可能有意义:
+  <title>HTML5 Syntax and Coding Style</title>
+  为了确保正确的解释，和正确的搜索引擎索引，语言和字符编码应尽早定义在文档中:
+  <!DOCTYPE html>
+  <html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML5 Syntax and Coding Style</title>
+  </head>
+
+设置视窗
+  HTML5引入了一个让网页设计师接管视口控制方法, 通过<meta> 标签.
+  视图是一个网页的用户的可见区域. 根据设备的不同，在手机上比在电脑屏幕上要小。
+  你应包括下列<meta>视图元素在你所有的网页
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta> 视窗元素给浏览器如何控制页面的尺寸和缩放比例.
+  width=device-width 部分设置页面宽度以跟踪设备的屏幕宽度（这取决于设备的不同）。
+  initial-scale=1.0 当浏览器首次加载页面时，部分设置初始缩放级别。
+-->
+
+
+<!--html5图像
+html5 canvas
+  <canvas> 元素用于在网页上绘制图形.
+
+什么是 HTML Canvas?
+  HTML <canvas> 可以使用JavaScript在web页面上绘制图形.
+  <canvas> 元素只是图形的一个容器. 你必须使用JavaScript来绘制图形.
+  画布有几种方法，用于绘制路径、框、圆、文本和添加图像
+
+Canvas 实例
+  画布是在HTML页面的一个矩形区域. 默认情况下，画布没有边框，没有内容.
+  标记看起来像这样:
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+  注意: 总是指定一个id属性（在脚本中提到），以及定义画布大小的宽度和高度属性。若要添加边框，请使用样式属性。
+  下面是一个基本的空画布的例子:
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+  </canvas>
+  画线、画圆、画文本、空心文本、画线性渐变、画圆渐变、画图片
+
+html5 svg
+什么SVG?
+  SVG 支持可伸缩矢量图形
+  SVG 用于定义web图形
+  SVG 是W3C的推荐标准
+
+HTML <svg> 元素
+  HTML <svg> 元素是一个SVG图形容器。SVG 提供了几种方法，来绘制路径、框、圆、文本和图像。
+  
+SVG圆
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+  </svg>
+
+  </body>
+  </html>
+
+SVG 矩形
+  <svg width="400" height="100">
+    <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+  </svg>
+
+SVG 圆角矩形
+  <svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+  </svg>
+
+SVG 星型
+  <svg width="300" height="200">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+  </svg>
+
+SVG Logo
+  <svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+  你的浏览器不支持SVG.  
+  </svg>  
+
+SVG和Canvas之间的差异
+  SVG 是一种使用XML描述二维图形的语言.
+  Canvas 使用JavaScript在web页面上绘制二维图形.
+  SVG是基于XML的，这意味着每一个元素在SVG DOM里面是可用的。你可以将JavaScript事件处理程序附着到元素。
+  在SVG，每画形状记忆为对象。如果一个SVG的对象属性的改变，浏览器可以自动重新绘制形状
+  画布按像素渲染像素。在画布中，一旦图形被绘制，它被浏览器遗忘。如果它的位置应该改变，整个场景需要被重画，包括可能被任何图形包含的对象.
+
+Canvas 和 SVG的比较
+下表显示Canvas和SVG之间的一些重要差异:
+
+Canvas	
+  分辨率的依赖性
+  不支持事件处理程序
+  文本渲染能力差
+  你可以保存图像为JPG或者PNG。
+  非常适合图形密集型游戏
+SVG
+  不依赖分辨率
+  支持事件处理程序
+  最适合大渲染区域的应用（谷歌地图）
+  如果复杂的渲染速度慢（任何使用DOM会慢很多）
+  不适合游戏应用
+-->
+
+
+<!--html5多媒体
+网络上的多媒体是声音、音乐、视频、电影和动画.
+什么是多媒体?
+  多媒体有许多不同的格式。它几乎可以是任何你能听到或看到的.
+  例如：图像，音乐，声音，视频，录像，电影，动画，等等.
+  网页通常包含不同类型和格式的多媒体元素.
+  在本章中你将学习不同的多媒体格式.
+
+浏览器支持
+  第一个Web浏览器只支持文本，仅限于单一颜色和单一字体.
+  后来有了支持颜色、字体和图像的浏览器!
+  音频，视频和动画可以被不同的浏览器处理.支持不同的格式，有些格式需要额外的辅助程序（插件）来工作。
+  希望这将成为历史。HTML5多媒体承诺为多媒体带来全新的未来。
+
+多媒体格式
+  多媒体元素（如音频或视频）存储在媒体文件中.
+  发现文件类型的最常用的方法是查看文件扩展名.
+  多媒体文件的格式有不同的扩展: .swf, .wav, .mp3, .mp4, .mpg, .wmv, and .avi.
+
+常见的视频格式
+  MP4是互联网视频总新的和即将出现的格式
+  MP4 被YouTube推荐.
+  MP4 被Flash播放器支持.
+  MP4 被HTML5支持.
+
+  格式	           文件	                         描述
+  MPEG	          .mpg .mpeg	               MPEG. 由运动图像专家组开发。网络上最流行的视频格式。被所有的浏览器都支持，但它不支持HTML5（看MP4）.
+  AVI	            .avi	                     AVI（Audio Video Interleave）。微软开发。常用于摄像机和电视硬件。在Windows电脑上玩得很好，但不是在网络浏览器。
+  WMV	            .wmv	                     WMV（Windows媒体视频）。微软开发。常用于摄像机和电视硬件。在Windows电脑上玩得很好，但不是在网络浏览器.
+  QuickTime	      .mov	                   QuickTime. 苹果开发。常用于摄像机和电视硬件。在苹果电脑上玩得很好，但在网络浏览器中不行。（看MP4）
+  RealVideo	      .rm .ram	               RealVideo. 由Real Media开发，允许低带宽视频流。它仍然用于在线视频和互联网电视，但不在网络浏览器中播放.
+  Flash	          .swf .flv	                   Flash. Macromedia公司开发的。经常需要额外的组件（插件）在web浏览器中播放.
+  Ogg	             ogg	                     Theora Ogg. 由xiph.org基金开发。支持HTML5.
+  WebM	           .webm	                   WebM. 由网络巨头, Mozilla, Opera, Adobe, 和 Google开发. 支持HTML5.
+  MPEG-4or MP4	.mp4	                      MP4.由运动图像专家组开发。基于QuickTime。常用于新的摄像机和电视硬件。所有支持HTML5的浏览器。YouTube推荐. 
+  只有MP4，WebM和Ogg视频，通过HTML5标准支持。
+
+音频格式
+  MP3压缩音乐的新格式。长期MP3已经成为数字音乐的代名词.
+  如果你的网站是关于音乐的，MP3是首选.
+
+  格式	             文件	                         描述
+  MIDI	           .mid .midi	                 MIDI（乐器数字接口）。所有的电子音乐设备如电子合成器和PC声卡的主要格式。MIDI文件不包含声音，但数字指出，可以发挥电子。玩所有电脑和音乐硬件，但不是在网络浏览器.
+  RealAudio	     .rm .ram	RealAudio.            由Real Media开发，允许低带宽的音频流。不在网页浏览器中播放.
+  WMA	             .wma	                       WMA（Windows媒体音频）。微软开发。音乐播放器常用。在Windows电脑上玩得很好，但不是在网络浏览器.
+  AAC	             .aac	                       AAC（高级音频编码）。苹果的iTunes默认格式发展。在苹果电脑上玩得很好，但在网络浏览器中不行.
+  WAV	            .wav 	                       WAV。由IBM和微软开发的。起到良好的Windows，Macintosh和Linux操作系统。支持HTML5.
+  Ogg	          .ogg	                         Ogg. 由xiph.org基金开发。支持HTML5.
+  MP3	            .mp3	                       MP3是MPEG文件的声音部分实际上。MP3音乐播放器最流行的格式。结合良好的压缩（小文件）高品质。支持所有浏览器.
+  MP4	             .mp4	                      MP4视频格式，但也可以用于音频。MP4视频在互联网即将到来的视频格式。这导致MP4音频自动支持所有的浏览器.
+  只有MP3，WAV，OGG音频和通过HTML5标准支持.
+
+html5视频
+  <body>
+  <video width="400" controls>
+    <source src="/static/assets/tutorials/front/html/mov_bbb.mp4" type="video/mp4">
+    <source src="/static/assets/tutorials/front/html/mov_bbb.ogg" type="video/ogg">
+    你的浏览器不支持HTML5 video标记.
+  </video>
+  <p>
+   视频来源于：
+  <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+  </p>
+  </body>
+  
+HTML <video> 元素
+  在HTML中，使用<video> 元素显示一个视频:
+  <video width="320" height="240" controls>
+    <source src="/static/assets/tutorials/front/html/movie.mp4" type="video/mp4">
+    <source src="/static/assets/tutorials/front/html/movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+
+它是如何工作的
+  控制属性添加到视频控制上，像play, pause和volume
+  这是一个好主意，总是包括宽度和高度属性。如果没有设置高度和宽度，则当视频加载时，页面可能会闪烁.
+  <source> 元素允许您指定浏览器可以选择的其他视频文件。浏览器将使用第一个识别格式.
+  <video> 和 </video>之间的文本当浏览器不支持 <video> 元素时将显示.
+
+HTML <video> Autoplay
+  让视频自动播放使用 autoplay 属性:
+  <video width="320" height="240" autoplay>
+    <source src="/static/assets/tutorials/front/html/movie.mp4" type="video/mp4">
+    <source src="/static/assets/tutorials/front/html/movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+  autoplay 属性在移动设备如iPhone和iPad上不工作
+
+HTML 视频 - 浏览器支持
+  HTML5, 有3个支持的视频格式: MP4, WebM, and Ogg.
+  浏览器支持不同的格式是:
+  浏览器	              MP4	      WebM	      Ogg
+  Internet Explorer	    YES	        NO	      NO
+  Chrome	               YES      	YES     	YES
+  Firefox	               YES	      YES     	YES
+  Safari	               YES	       NO     	NO
+  Opera	         YES (from Opera 25)YES       	YES
+
+HTML 视频 - 媒体类型
+  文件格式    	媒体类型
+  MP4	          video/mp4
+  WebM	        video/webm
+  Ogg	          video/ogg
+
+HTML 视频 - 方法, 属性和事件
+  HTML5 为<video>元素定义了方法、属性和事件.
+  这允许您加载，播放和暂停视频，以及设置持续时间和音量.
+  也有DOM事件能够通知你一个视频开始播放，暂停，等.
+  实例: 使用JavaScript
+  <body>
+    <div style="text-align:center">
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+    <video id="video1" width="420">
+        <source src="/static/assets/tutorials/front/html/mov_bbb.mp4" type="video/mp4">
+        <source src="/static/assets/tutorials/front/html/mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <script>
+      var myVideo = document.getElementById("video1");
+      function playPause() {
+          if (myVideo.paused)
+              myVideo.play();
+          else
+              myVideo.pause();
+      }
+      function makeBig() {
+          myVideo.width = 560;
+      }
+      function makeSmall() {
+          myVideo.width = 320;
+      }
+      function makeNormal() {
+          myVideo.width = 420;
+      }
+    </script>
+  </body>
+
+HTML5 视频标签
+  标签	       描述
+  <video>	   定义视频或电影
+  <source>	 为媒体元素定义多个媒体资源, 像 <video> 和 <audio>
+  <track>	   定义媒体播放器中的文本轨道
+
+html5音频
+在网页上的音频
+  在HTML5之前, 音频文件只能在浏览器中通过插件播放（如Flash）.
+  在HTML5中，<audio>元素指定在网页中嵌入音频的标准方法.
+
+HTML <audio> 元素
+  在HTML中播放音频文件, 使用<audio>元素:
+  <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+HTML 音频 - 它如何工作
+  添加控制属性到audio, 像 play, pause, 和 volume.
+  <source> 素允许您指定可选的音频文件，浏览器可以选择。浏览器将使用第一个识别格式.
+  在 <audio> 和 </audio> 标签之间的文本是浏览器不支持<audio>元素的提示信息.
+
+HTML 音频 - 浏览器支持
+  在HTML5里面, 有3个支持的音频格式: MP3, Wav和Ogg.
+  浏览器支持不同的格式是:
+  浏览器	              MP3	      Wav	      Ogg
+  Internet Explorer	    YES	      NO	      NO
+  Chrome	              YES	      YES	      YES
+  Firefox	              YES	      YES	      YES
+  Safari	              YES	      YES	      NO
+  Opera	                YES	      YES	      YES
+
+HTML 音频 - 媒体类型
+  文件格式	媒体类型
+  MP3	    audio/mpeg
+  Ogg	    audio/ogg
+  Wav	    audio/wav
+
+HTML 音频 - 方法、属性和事件
+  HTML5 为<audio>元素定义了方法、属性和事件.
+  这允许你加载，播放，暂停音频，以及设置时间和量.
+  也有DOM事件，可以通知你的音频开始播放，暂停，等.
+
+HTML5 音频标签
+  标签	        描述
+  <audio>	    定义声音内容
+  <source>	  为媒体元素定义多个媒体资源, 像 <video> 和 <audio>
+-->
+
+
+<!--html5 APIs
+html5地图
+TML Geolocation API是用来定位用户的位置 
+定位用户位置
+  HTML Geolocation API是用来获取用户地理位置.
+  由于这会损害隐私，该位置是不可用的，除非用户批准它.
+  注：定位最准确的设备是GPS，如：iPhone
+  于安全考虑，地理定位API将只能工作在安全的环境中，如HTTPS。如果你的网站在一个不安全的来源（如HTTP）来获得用户位置的请求将不提供该功能.
+
+使用 HTML Geolocation
+  getCurrentPosition() 方法用于返回用户的位置.
+  下面的示例返回用户位置的经纬度:
+    <script>
+    var x = document.getElementById("demo");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+    实例解析:
+    检查定位支持
+      如果支持, 运行getCurrentPosition() 方法. 如果不支持，向用户显示消息
+      如果getCurrentPosition()方法是成功的, 它返回一个左边对象，作为参数传递给函数showPosition
+      showPosition() 函数输出经纬度
+    上面的例子是一个非常基本的地理定位的脚本，没有错误处理。
+
+理错误和拒绝
+  getCurrentPosition() 方法的第二个参数，用来处理错误. 它指定了一个函数去执行，如果它未能获得用户的位置:
+  function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+  }
+
+在地图上显示结果
+  若要在地图中显示结果，需要访问地图服务，如 Google Maps.
+
+  在下面的例子中，返回的纬度和经度用于显示在 Google Map上 (使用静态图片):
+
+  function showPosition(position) {
+      var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+      var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+      "+latlon+"&zoom=14&size=400x300&sensor=false";
+
+      document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+  }
+
+特定位置的信息
+  此页演示如何在地图上显示用户的位置.
+  地理位置也是非常有用的特定位置的信息, 像:
+    最新的本地信息
+    显示用户附近的兴趣点
+    导航 (GPS)
+
+getCurrentPosition() 方法 - 返回数据
+  getCurrentPosition() 当成功时，返回一个对象. 纬度，经度和精度属性总是返回. 如果可用，则返回其他属性:
+  属性	                                返回
+  coords.latitude	              作为十进制数的纬度（总是返回）
+  coords.longitude	            经度为十进制数（总是返回）
+  coords.accuracy	              位置的准确性（总是返回）
+  coords.altitude	              海拔在平均海平面以上的高度（如有返回）
+  coords.altitudeAccuracy	      高度位置精度（如果有返回）
+  coords.heading	              头顺时针方向从北（如果可用返回）
+  coords.speed	                米/秒的速度（如果可用返回）
+  timestamp	                    响应的日期/时间（如果可用返回）
+
+Geolocation 对象 - 其他方法
+  地理定位的对象也有其他一些方法:
+    watchPosition() - 返回用户当前位置，并继续返回更新位置，如用户移动（如GPS在汽车）.
+    clearWatch() - 停止watchposition()方法.
+  下面的例子显示了watchposition()方法。你需要一个精确的GPS设备来测试这个（像iPhone）:
+  <script>
+  var x = document.getElementById("demo");
+  function getLocation() {
+      if (navigator.geolocation) {
+          navigator.geolocation.watchPosition(showPosition);
+      } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+  }
+  function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+  }
+  </script>
+
+
+#html5拖曳效果
+拖放
+  拖放是一个非常常见的功能。用在当你“抓取”一个对象并拖动它到另一个位置时.
+  HTML5里, 拖放是标准的一部分：任何元素都可以拖动.
+  HTML拖放示例
+下面的例子是一个简单的拖放例子:
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+  <script>
+  function allowDrop(ev) {
+      ev.preventDefault();
+  }
+
+  function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+  </head>
+  <body>
+
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  <img id="drag1" src="img_logo.gif" draggable="true"
+  ondragstart="drag(event)" width="336" height="69">
+
+  </body>
+  </html>
+  这可能看起来很复杂，但让我们通过拖放事件的所有不同部分.
+
+让一个元素可以拖动
+  首先：做一个元素拖动，拖动属性设置为真:
+  <img draggable="true">
+
+拖什么 - ondragstart 和 setData()
+  然后，指定元素拖动时应该发生什么.
+  在上面的实例中, ondragstart 属性调用一个函数, drag(event), 指定要拖动的数据.
+  dataTransfer.setData() 方法设置拖动数据的数据类型和值:
+  function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+  }
+  在这种情况下, 数据类型是 "text"并且拖动元素的id值是drag1.
+
+拖到哪儿 - ondragover
+  ondragover 事件指定拖动数据可以被丢弃的位置.
+  默认情况下，数据/元素不能在其他元素中删除。要允许拖动，我们必须防止元素的默认处理.
+  在ondragover事件方法中调用event.preventDefault():
+  event.preventDefault()
+
+拖动 - ondrop
+  当拖动的数据被拖动时,拖动事件发生.
+  在上面的实例中, ondrop 属性调用函数, drop(event):
+  function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+  }
+  代码解析:
+    调用preventDefault() 为了防止浏览器默认处理数据（默认是作为链接打开）
+    使用dataTransfer.getData()方法获得拖动数据. 此方法将返回数据和setData方法相同
+    拖放数据元素的id是drag1
+    将拖动的元素添加到拖动元素中
+
+html5 web存储
+HTML的本地存储；比cookie更好。
+HTML的本地存储是什么?
+  使用本地存储，Web应用程序可以在用户浏览器中本地存储数据.
+  在HTML5之前, 应用程序数据必须存储在cookie中, 包含在每个服务器请求中.
+  本地存储是更安全的，大量的数据可以存储在本地，而不会影响网站的性能.
+  不像cookies, 存储限制的更大（至少5MB）并且信息从来不传送到服务器.
+  本地存储是每个源（每个域和协议）. 所有页面，从一个原点，可以存储和访问相同的数据.
+
+HTML的本地存储对象
+  HTML 本地存储提供了两个对象为客户端存储数据:
+    window.localStorage - 存储没有时间限制的数据
+    window.sessionStorage - 存储一个会话的数据（当浏览器选项卡关闭时数据丢失）
+  在使用本地存储之前，检查浏览器是否支持 localStorage 和 sessionStorage:
+  if (typeof(Storage) !== "undefined") {
+      // Code for localStorage/sessionStorage.
+  } else {
+      // Sorry! No Web Storage support..
+  }
+
+localStorage 对象
+  localStorage 对象存储没有时间限制的数据. 当浏览器关闭时，数据将不会被删除，将在第二天、一周或一年中使用.
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+实例解析:
+    创建一个localStorage name/value 对 使用 name="lastname" 和 value="Smith"
+    检索"lastname"的值，并且使用id="result"插入它到元素里面
+  上面的例子也可以这样写:
+  // Store
+  localStorage.lastname = "Smith";
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.lastname;
+  删除localStorage中的"lastname"项，写法如下:
+  localStorage.removeItem("lastname");
+  注意: Name/value对总是存储为字符串. 记住在需要时将它们转换为另一种格式!
+
+  下面的示例计算用户单击按钮的次数。在这个代码中，值字符串被转换为一个数字，以便能够增加计数器:
+  if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount) + 1;
+  } else {
+      localStorage.clickcount = 1;
+  }
+  document.getElementById("result").innerHTML = "You have clicked the button " +
+  localStorage.clickcount + " time(s).";
+
+sessionStorage 对象
+sessionStorage 对象和localStorage对象等价, 除了它只存储一个会话的数据. 当用户关闭特定浏览器选项卡时，数据将被删除.
+
+下面的示例计算当前会话中用户单击某个按钮的次数:
+  if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+  } else {
+      sessionStorage.clickcount = 1;
+  }
+  document.getElementById("result").innerHTML = "You have clicked the button " +
+  sessionStorage.clickcount + " time(s) in this session.";
+
+html5 应用缓存
+使用应用程序缓存，通过创建缓存清单文件，可以轻松地创建web应用程序的脱机版本.
+什么是应用缓存?
+  HTML5 介绍应用程序缓存，这意味着Web应用程序缓存，并且在没有Internet连接的时候可访问。
+  应用程序缓存给出了应用程序的三个优点:
+    离线浏览 - 用户可以在离线时使用应用程序
+    速度 - 缓存资源加载速度更快
+    减少服务器的负载 - 浏览器只会从服务器下载更新/更改的资源
+
+HTML缓存清单的例子
+  下面的例子显示了一个缓存清单的HTML文档（离线浏览）:
+  <!DOCTYPE HTML>
+  <html manifest="demo.appcache">
+  <body>
+  The content of the document......
+  </body>
+  </html>
+
+缓存清单基础
+  要启用应用程序缓存，请在文档中包含清单属性:
+  <!DOCTYPE HTML>
+  <html manifest="demo.appcache">
+  ...
+  </html>
+  当用户访问它时，将指定具有指定属性的每一页。如果未指定清单属性，则不会缓存该页（除非页直接在清单文件中指定）.
+  清单文件的推荐文件扩展名为: ".appcache"
+  清单文件需要与 正确的媒体类型 一起使用, "text/cache-manifest". 必须配置在web服务器上.
+
+清单文件
+  清单文件是一个简单的文本文件，它告诉浏览器要缓存什么（以及什么永远不要缓存）。.
+  清单文件有三个部分:
+    CACHE MANIFEST - 此标头下列出的文件它们首次下载将被缓存
+    NETWORK - 此标头下列出的文件需要与服务器连接，而且不会缓存
+    FALLBACK - 此标头下列出的文件如果页面不能访问的反馈页面
+  缓存清单
+  第一行，CACHE MANIFEST，是必需的
+  CACHE MANIFEST
+  /theme.css
+  /logo.gif
+  /main.js
+  上面的清单文件列出了三个资源: 一个CSS文件，GIF图像，和一个JavaScript文件.
+  当加载清单文件时，浏览器将从网站的根目录下载三个文件。.
+  然后，每当用户没有连接到Internet，资源仍然可用.
+
+  NETWORK
+  NETWORK 下一节指定文件“login.asp”永远不应该被缓存，并且不能脱机使用:
+  NETWORK:
+  login.asp
+  星号可以用来表示所有其他资源/文件需要互联网连接:
+  NETWORK:
+  *
+
+  FALLBACK
+  FALLBACK 下面指定的"offline.html"将服务于所有文件放在/HTML/目录，如果网络连接不能建立
+  FALLBACK:
+  /html/ /offline.html
+  注意: 第一个URI是资源, 第二行是fallback.
+
+更新缓存
+  一旦应用程序被缓存，它将一直缓存，直到下面其中一种情况发生:
+    用户清除浏览器的缓存
+    清单文件被修改（见下面的提示）
+    应用程序缓存是以编程方式更新
+  实例 - 完整的缓存清单文件
+  CACHE MANIFEST
+  # 2012-02-21 v1.0.0
+  /theme.css
+  /logo.gif
+  /main.js
+
+  NETWORK:
+  login.asp
+
+  FALLBACK:
+  /html/ /offline.html
+  提示: 以"#"打头的是注释行, 但也可以服务另一个目的.应用程序的缓存只在其清单文件更改时更新. 如果你编辑一个图像或JavaScript功能的变化，这些变化会不会重新缓存. 在注释行中更新日期和版本是使浏览器重新缓存文件的一种方法.
+
+应用程序缓存注意事项
+  小心你缓存的东西.
+  一旦文件被缓存，浏览器将继续显示缓存的版本，即使你改变服务器上的文件。要确保浏览器更新缓存，您需要更改清单文件.
+  注意: 浏览器会缓存数据的不同尺寸的限制（一些浏览器站点一5MB限制）.
+
+html5多线程
+一个web worker是一个在后台运行的JavaScript，不影响页面的性能
+什么是Web Worker?.
+  当执行脚本的HTML页面，页面变得反应迟钝，直到脚本完成
+  一个web worker是一个在后台运行的JavaScript, 独立于其他脚本,不影响页面的性能. 你可以继续做任何你想做的事情：点击，选择东西等，而web worker在后台运行.
+
+检查 Web Worker 的支持
+  在创建web worker之前，请检查用户的浏览器是否支持它:
+  if (typeof(Worker) !== "undefined") {
+      // Yes! Web worker support!
+      // Some code.....
+  } else {
+      // Sorry! No Web Worker support..
+  }
+
+创建Web worker文件
+  现在，让我们在一个外部JavaScript创建Web worker.
+  在这里，我们创建一个脚本计数. 该脚本存储在 "demo_workers.js" 文件中:
+  var i = 0;
+  function timedCount() {
+      i = i + 1;
+      postMessage(i);
+      setTimeout("timedCount()",500);
+  }
+  timedCount();
+  上面代码的重要部分是 postMessage() 方法 - 这是用来发布消息返回到HTML页面.
+  注意: 通常Web Worker不只简单的脚本，而是用于更多的CPU密集型任务.
+
+创建一个Web Worker对象
+  现在我们有Web Worker文件，我们需要从一个HTML页面调用它.
+  下面的行检查是否Web Worker已经存在, 如果不存在-它创建一个新的Web Worker对象并在"demo_workers.js"中运行代码:
+  if (typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+  }
+  然后，我们可以从web worker发送和接收消息
+  添加一个"onmessage"事件监听器到web worker.
+  w.onmessage = function(event){
+      document.getElementById("result").innerHTML = event.data;
+  };
+  当Web Work er发布消息时，将执行事件侦听器内的代码. 来自Web Worker的数据存储在 event.data.
+
+结束一个Web Worker
+  当一个web worker对象被创建时, 它将继续侦听消息（即使外部脚本完成后），直到它被终止。
+  终止一个 web worker, 并且是否浏览器/计算机资源, 使用terminate()方法:
+  w.terminate();
+
+重用Web Worker
+  如果将web worker变量设置为undefined，在它被终止后，您可以重用代码:
+  w = undefined;
+
+完整的web worker示例代码
+  我们已经在看到web worker 在js文件中的代码。下面是HTML页面代码:
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <p>Count numbers: <output id="result"></output></p>
+  <button onclick="startWorker()">Start Worker</button>
+  <button onclick="stopWorker()">Stop Worker</button>
+
+  <script>
+  var w;
+
+  function startWorker() {
+      if(typeof(Worker) !== "undefined") {
+          if(typeof(w) == "undefined") {
+              w = new Worker("demo_workers.js");
+          }
+          w.onmessage = function(event) {
+              document.getElementById("result").innerHTML = event.data;
+          };
+      } else {
+          document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+      }
+  }
+
+  function stopWorker() {
+      w.terminate();
+      w = undefined;
+  }
+  </script>
+
+  </body>
+  </html>
+
+Web Workers 和 DOM
+  由于Web worker 在外部文件中，他们不能访问下面的JavaScript对象:
+  window 对象
+  document 对象
+  parent 对象
+
+html实例
+  http://codingdict.com/article/11935
+-->
+
