@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>编程字典</title>
+    <style>
+        html {
+            background: url(/pictures/web.jpg) no-repeat center fixed;
+            background-size: contain;
+        }
+
+        /* #example1 {
+            background-image: url(/pictures/web.jpg);
+            background-position: right bottom, left top;
+            background-repeat: repeat, repeat;
+            background-size: cover;
+            padding: 15px;
+        } */
+        #example1 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(/pictures/jump.gif);
+            background-repeat: no-repeat;
+        }
+
+        #example2 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(/pictures/jump.gif);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        #example3 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(/pictures/jump.gif);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+
+        #borderimg {
+            border: 10px solid transparent;
+            padding: 15px;
+            -webkit-border-image: url("/pictures/web.jpg") 10% round;
+            /* Safari 3.1-5 */
+            -o-border-image: url("/pictures/web.jpg") 10% round;
+            /* Opera 11-12.1 */
+            border-image: url("/pictures/web.jpg") 10% round;
+        }
+    </style>
+</head>
+
+<body>
+    <p>没有 background-origin (padding-box 默认):</p>
+    <div id="example1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+
+    <p>background-origin: border-box:</p>
+    <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+
+    <p>background-origin: content-box:</p>
+    <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>>注意:</strong> IE 10, 和更早的版本, 不支持 border-image 属性.</p>
+    </div>
+</body>
+
+</html>
